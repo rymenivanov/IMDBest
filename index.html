@@ -6,18 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>IMDbest - Movies, TV and Celebs</title>
+    <link rel="stylesheet" href="styles/reset.css">
     <link rel="icon" href="images/icon.png">
+    <link rel="stylesheet" href="styles/styles.css">
+
 </head>
 
 <body>
     <div class="wrapper">
         <header>
-            <nav>
-                <img src="images/logo.png" alt="Home" srcset="">
+            <nav id="navigation">
+                <div class = "logoSearch">
+                    <img id="logoImg" src="images/logo.png" alt="Home" srcset="">
+                    <form action="GET">
+                        <input id="navbarSearch" type="text" placeholder="Movies, celebs, TV shows and more...">
+                    </form>
+                </div>
+                <ul>
+                    <li>
+                        <a href="">Movies</a>
+                        <a href="">TV</a>
+                        <a href="">Showtimes</a>
+                        <span><img src="images/arrowDown.png" alt=""></span>
+                    </li>
+                    <li>
+                        <a href="">Celebs</a>
+                        <a href="">Events</a>
+                        <a href="">Photos</a>
+                        <span><img src="images/arrowDown.png" alt=""></span>
+                    </li>
+                    <li>
+                        <a href="">News</a>
+                        <a href="">Community</a>
+                        <span><img src="images/arrowDown.png" alt=""></span>
+                    </li>
+                    <li>
+                        <a href="">Watchlist</a>
+                        <span><img src="images/arrowDown.png" alt=""></span>
+                    </li>
+                </ul>
             </nav>
         </header>
-    </div>
 
+    </div>
 </body>
 
 </html>

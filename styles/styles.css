@@ -1,0 +1,51 @@
+.wrapper {
+    width: 1000px;
+    max-height: 2000px;
+    background-color: #E9F8E0;
+    padding: 15px;
+    border: 4px outset #B5EA9C;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    
+}
+
+#logoImg{
+    width: 100px;
+    display: block;
+}
+
+#navigation {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+}
+
+#navbarSearch {
+    display: block;
+    margin: auto;
+    width: 50%;
+    padding: 1em;
+}
+
+nav ul li {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 24.5%;
+    text-align: center;
+    padding: 1em;
+    border: 1px solid black;
+    margin-top: 1em;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li span img {
+    width: 11px;
+}
+
+.logoSearch {
+    width: 50%;
+}
