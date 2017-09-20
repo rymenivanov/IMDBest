@@ -18,8 +18,18 @@
             <nav id="navigation">
                 <div class = "logoSearch">
                     <img id="logoImg" src="images/logo.png" alt="Home" srcset="">
-                    <form action="GET">
+                    <form id="searchForm" action="GET">
                         <input id="navbarSearch" type="text" placeholder="Movies, celebs, TV shows and more...">
+                        <select id="navbarSelect">
+                            <option value="All">All</option>
+                            <option value="Titles">Titles</option>
+                            <option value="TV Episodes">TV Episodes</option>
+                            <option value="Names">Names</option>
+                            <option value="Bios">Bios</option>
+                            <option value="Plots">Plots</option>
+                            <option value="Quotes">Quotes</option>
+                        </select>
+                        <img id="magnifier" src="images/searchIcon.png" alt="Lypichka">
                     </form>
                 </div>
                 <ul>

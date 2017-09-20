@@ -1,9 +1,9 @@
 .wrapper {
-    width: 1000px;
+    width: 85%;
     max-height: 2000px;
-    background-color: #E9F8E0;
+    background-color: #F99E9E;
     padding: 15px;
-    border: 4px outset #B5EA9C;
+    border: 4px outset #491313;
     border-radius: 5px;
     box-sizing: border-box;
     margin: 0 auto;
@@ -11,8 +11,10 @@
 }
 
 #logoImg{
-    width: 100px;
-    display: block;
+    width: 119px;
+    display: inline-block;
+    margin-bottom: -30px;
+    margin-top: -20px;  
 }
 
 #navigation {
@@ -22,19 +24,25 @@
 }
 
 #navbarSearch {
-    display: block;
+    display: inline-block;
     margin: auto;
-    width: 50%;
+    width: 62%;
     padding: 1em;
+}
+#navbarSelect {
+    width: 12%;
+    height: 46px;
 }
 
 nav ul li {
     box-sizing: border-box;
     display: inline-block;
-    width: 24.5%;
+    width: 20%;
     text-align: center;
     padding: 1em;
+    margin: 1em;
     border: 1px solid black;
+    border-radius: 1em;
     margin-top: 1em;
 }
 nav ul li a{
@@ -47,5 +55,17 @@ nav ul li span img {
 }
 
 .logoSearch {
-    width: 50%;
+    width: 100%;
+    display: inline-block;
+}
+
+#searchForm{
+    display: inline-block;
+    width: 89%;
+    margin-bottom: 20px;
+}
+
+#magnifier{
+    width: 50px;
+    margin-bottom: -21px;
 }
