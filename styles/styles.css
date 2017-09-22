@@ -121,7 +121,6 @@ nav ul li span img {
     border-radius: 4px;
     padding: 4px 10px;
     box-sizing: border-box;
-<<<<<<< HEAD
     background-color: white;
     margin-bottom: 5px;
     margin-left: 82px;
@@ -208,7 +207,6 @@ border-radius: 0.2em; */
 }
 form {
     margin-top: 40px;
-=======
 }
 .dropdown {
     position: relative;
@@ -238,5 +236,4 @@ form {
     padding: 10px;
     text-decoration: none;
     display: block;
->>>>>>> 5070cdbdfce3016f8987bbfbf1aea477ad4b172a
 }
