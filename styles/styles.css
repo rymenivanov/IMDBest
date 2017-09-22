@@ -88,3 +88,31 @@ nav ul li span img {
     width: 30px;
     margin-bottom: -12px;
 }
+
+#facebookLogo {
+    background: url(http://www.freeiconspng.com/uploads/facebook-transparent-logo-png-0.png) no-repeat;
+    height: 26px;
+    width: 26px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#facebookLogin {
+    background-color: #3B5998;
+    color: white;
+    font-weight: bold;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+.logins {
+    height: 34px;
+    width: 235px;
+    text-decoration: none;
+    background-color: #3B5998;
+    display: block;
+    position: relative;
+    border-radius: 4px;
+    padding: 4px 10px;
+    box-sizing: border-box;
+}
