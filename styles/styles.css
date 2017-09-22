@@ -61,11 +61,16 @@ nav ul li span img {
 
 #searchForm{
     display: inline-block;
-    width: 89%;
+    width: 75%;
     margin-bottom: 20px;
 }
 
 #magnifier{
     width: 46px;
     margin-bottom: -21px;
+}
+
+.socialMedia {
+    width: 30px;
+    margin-bottom: -12px;
 }
