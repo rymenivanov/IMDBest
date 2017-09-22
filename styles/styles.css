@@ -104,7 +104,6 @@ nav ul li span img {
 }
 
 #facebookLogin {
-    background-color: #3B5998;
     color: white;
 }
 
@@ -114,7 +113,7 @@ nav ul li span img {
 
 .logins {
     height: 34px;
-    width: 235px;
+    width: 235px; /* to be changed */
     text-decoration: none;
     display: block;
     position: relative;
@@ -122,13 +121,11 @@ nav ul li span img {
     padding: 4px 10px;
     box-sizing: border-box;
     background-color: white;
-    margin-bottom: 5px;
-    margin-left: 82px;
+    margin: auto;
     font-size:14px;
 }
 
 #arkCreate {
-    background-color: #E4B721;
     color: black;
     font-weight: 900;
     vertical-align: middle;
@@ -146,6 +143,7 @@ nav ul li span img {
 #sign {
     width: 35%;
     float: left;
+    margin: auto;
     border-right: 1px solid grey
 }
 
@@ -171,7 +169,6 @@ main {
      text-align: center;
      font-weight: bold;
      margin-bottom: 30px;
-     /* margin-top: 20px; */
      font-size: 1.5em;
      color: darkslategray;
  }
@@ -182,7 +179,6 @@ main {
 .sign input[type=submit] {
     display: block;
 }
-
 
 #form {
 margin: auto;
