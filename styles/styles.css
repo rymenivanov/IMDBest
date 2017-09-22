@@ -10,7 +10,7 @@
     background-color: #D9D7D5;
     padding: 15px;
     box-sizing: border-box;
-    margin: 0 auto;
+    margin: auto;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
 }
@@ -89,30 +89,122 @@ nav ul li span img {
     margin-bottom: -12px;
 }
 
-#facebookLogo {
-    background: url(http://www.freeiconspng.com/uploads/facebook-transparent-logo-png-0.png) no-repeat;
+.logins > span > img {
     height: 26px;
     width: 26px;
     display: inline-block;
     vertical-align: middle;
 }
 
-#facebookLogin {
-    background-color: #3B5998;
-    color: white;
+.logins > span:last-of-type {
     font-weight: bold;
     vertical-align: middle;
     margin-left: 8px;
+    color: darkslategray;
+}
+
+#facebookLogin {
+    background-color: #3B5998;
+    color: white;
+}
+
+#facebookButton {
+    background-color: #3B5998;
 }
 
 .logins {
     height: 34px;
     width: 235px;
     text-decoration: none;
-    background-color: #3B5998;
     display: block;
     position: relative;
     border-radius: 4px;
     padding: 4px 10px;
     box-sizing: border-box;
+    background-color: white;
+    margin-bottom: 5px;
+    margin-left: 82px;
+    font-size:14px;
+}
+
+#arkCreate {
+    background-color: #E4B721;
+    color: black;
+    font-weight: 900;
+    vertical-align: middle;
+    margin-left: 8px;
+    text-align: center;
+    padding-top: 8px;
+}
+#arkButton {
+    background-color: #E4B721;
+    vertical-align: middle;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#sign {
+    width: 35%;
+    float: left;
+    border-right: 1px solid grey
+}
+
+#signInBenefits {
+    width: 64.9%;
+    height: 233px; /* to be changed */
+    float: left;
+    display: none
+}
+
+#signInBenefits > img {
+     display: block;
+     height: 200px;
+     margin-left: 30px;
+}
+
+main {
+    /* background-color: white; */
+    min-height: 400px;
+}
+
+.sign > h2 {
+     text-align: center;
+     font-weight: bold;
+     margin-bottom: 30px;
+     /* margin-top: 20px; */
+     font-size: 1.5em;
+     color: darkslategray;
+ }
+
+.sign label {
+    display: block;
+}
+.sign input[type=submit] {
+    display: block;
+}
+
+
+#form {
+margin: auto;
+width: 300px;
+height: 300px;
+font-size: 1.3em;
+vertical-align: middle;
+/* border: 2px solid grey;
+border-radius: 0.2em; */
+}
+#signOrCreate{
+    width: 64.9%;
+    margin: auto;
+    
+}
+.sign {
+    float: left;
+}
+#form input[id]{
+
+    width: 80%;
+}
+form {
+    margin-top: 40px;
 }
