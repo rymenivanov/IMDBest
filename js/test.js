@@ -1,3 +1,3 @@
-function getAll(el){
+function All(){
     
 }

@@ -141,6 +141,7 @@ nav ul li span img {
 }
 
 #sign {
+    display: none;
     width: 35%;
     float: left;
     margin: auto;
@@ -192,6 +193,7 @@ border-radius: 0.2em; */
 #signOrCreate{
     width: 64.9%;
     margin: auto;
+    display: none;
     
 }
 .sign {
@@ -232,4 +234,14 @@ form {
     padding: 10px;
     text-decoration: none;
     display: block;
+}
+
+.socialMediaFooter{
+    width: 30px;
+    margin-bottom: 10px;
+}
+
+#followUs li:nth-child(odd){
+    float: left;
+    margin-right: 10px;
 }
