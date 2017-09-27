@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>thenewboston</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/hoverNew.js"></script>
+    <!-- add JQuery to JSON !!! -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- add JQuery to JSON !!! -->
+
+    <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"> -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script> -->
+    <style>
+        /* bootstrap dropdown hover menu*/
+        /* body {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #4f5d6e;
+  position: relative;
+  background: rgb(26, 49, 95);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(26, 49, 95, 1)), color-stop(10%, rgba(26, 49, 95, 1)), color-stop(24%, rgba(29, 108, 141, 1)), color-stop(37%, rgba(41, 136, 151, 1)), color-stop(77%, rgba(39, 45, 100, 1)), color-stop(90%, rgba(26, 49, 95, 1)), color-stop(100%, rgba(26, 49, 95, 1)));
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#1a315f', endColorstr='#1a315f', GradientType=0);
+}
+
+.body-wrap {
+  min-height: 700px;
+}
+
+.body-wrap {
+  position: relative;
+  z-index: 0;
+}
+
+.body-wrap:before,
+.body-wrap:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 260px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(26, 49, 95, 1)), color-stop(100%, rgba(26, 49, 95, 0)));
+  background: linear-gradient(to bottom, rgba(26, 49, 95, 1) 0%, rgba(26, 49, 95, 0) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#1a315f', endColorstr='#001a315f', GradientType=0);
+}
+
+.body-wrap:after {
+  top: auto;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(26, 49, 95, 0) 0%, rgba(26, 49, 95, 1) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#001a315f', endColorstr='#1a315f', GradientType=0);
+} */
+
+        nav {
+            margin-top: 60px;
+            box-shadow: 5px 4px 5px #000;
+        }
+
+        .dropdown-menu {
+            background-color: rgb(52, 52, 52);
+        }
+
+        .dropdown-menu>li>a {
+            color: whitesmoke;
+        }
+        .socialMediaFooter {
+            width: 30px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="body-wrap">
+
+        <div class="container">
+            <nav class="navbar navbar-inverse" role="navigation">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                          <span class="sr-only">Toggle navigation</span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">ARK Movies</a>
+                    </div>
+                    <!-- TODO SURCH -->
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <div class="col-md-12 pull-left">
+                                <form class="navbar-form" role="search">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
+                                        <div class="input-group-btn">
+                                            <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+
+
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Movies<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">In theaters</a></li>
+                                    <li><a href="#">Latest trailers</a></li>
+                                    <li><a href="#">Coming soon</a></li>
+                                    <li><a href="#">Release calender</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Top rated movies</a></li>
+                                    <li><a href="#">Top Box office</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Chart & Trends<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Oscar winers</a></li>
+                                    <li><a href="#">Most popular movies</a></li>
+                                    <li><a href="#">Most popular Tv shows</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Born today</a></li>
+                                    <li><a href="#">Latest Posters</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">News & Community<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">News</a></li>
+                                    <li><a href="#">Photos</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Quizes</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Whatch List</a></li>
+                            <li><a href="#">Sing in</a></li>
+
+                        </ul>
+
+
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+        </div>
+    </div>
+
+    <footer class="foot container footer">
+        <div class="row">
+            <div class="col-md-3 footer-brand animated fadeInLeft">
+                <h2>Logo</h2>
+                <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis facere est sequi aliquam debitis eum, numquam
+                    exercitationem ipsa vel mollitia enim laboriosam necessitatibus corrupti, nihil sed! Repellat nesciunt
+                    eos vitae!</p>
+                <p>© 2017 ItTalents, All rights reserved</p>
+            </div>
+            <div class="col-md-4 footer-nav animated fadeInUp">
+                <h4>Menu</h4>
+                <div class="col-md-6">
+                    <ul class="pages">
+                        <li><a href="#">Box Office</a></li>
+                        <li><a href="#">Comming Soon</a></li>
+                        <li><a href="#">Top Rated Movies</a></li>
+                        <li><a href="#">In Theaters</a></li>
+                        <li><a href="#">TV Series</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contacts</a></li>
+                        <li><a href="#">Terms & Condition</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-2 footer-social animated fadeInDown">
+                <h4>Follow Us</h4>
+                <ul id="followUs">
+                    <li><a href="#"><img class="socialMediaFooter" src="images/facebook.png" alt=""></a></li>
+                    <li><a href="#"><img class="socialMediaFooter" src="images/instagram.png" alt=""></a></li>
+                    <li><a href="#"><img class="socialMediaFooter" src="images/twitter1.png" alt=""></a></li>
+                    <li><a href="#"><img class="socialMediaFooter" src="images/linkedIn.png" alt=""></a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 footer-ns animated fadeInRight">
+                <h4>Newsletter</h4>
+                <p>A rover wearing a fuzzy suit doesn’t alarm the real penguins</p>
+                <p>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search for...">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-envelope"></span></button>
+                        </span>
+                    </div>
+                    <!-- /input-group -->
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
