@@ -25,6 +25,7 @@
   "homepage": "https://github.com/rymenivanov/IMDBest#readme",
   "dependencies": {
     "bootstrap": "^3.3.7",
+    "handlebars": "^4.0.10",
     "jquery": "^3.2.1"
   }
 }

@@ -13,15 +13,16 @@
     <script src="js/hoverNew.js"></script>
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="js/jquery.waterwheelCarousel.js"></script>
+    <script src="js/jquery.waterwheelCarousel.min.js"></script>
+    <script src="js/carousel.js"></script>
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="styles/styles.css">
-    
 </head>
 
 <body>
-
     <div class="body-wrap">
 
         <div class="container-fluid">
@@ -136,7 +137,7 @@
                                                             </div>
                                                             <div class="social-login">
                                                                 <p style="color:whitesmoke">Register With
-                                                                    </p>
+                                                                </p>
                                                                 <ul>
                                                                     <li><a href=""><i class="fa fa-facebook"></i> Facebook</a></li>
                                                                     <li><a href=""><i class="fa fa-google-plus"></i> Google+</a></li>
@@ -157,60 +158,70 @@
                     </div>
             </nav>
             </div>
-        </div>
-
-        <footer class="foot container footer">
-            <div class="row">
-                <div class="col-md-3 footer-brand animated fadeInLeft">
-                    <h2>Logo</h2>
-                    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis facere est sequi aliquam debitis eum,
-                        numquam exercitationem ipsa vel mollitia enim laboriosam necessitatibus corrupti, nihil sed! Repellat
-                        nesciunt eos vitae!</p>
-                    <p>© 2017 ItTalents, All rights reserved</p>
+            <main>
+                <div id="carousel" class="container-fluid">
+                    <img src="images/deadpool_poster.jpg" id="item-1" />
+                    <img src="images/baywatch_poster.jpg" id="item-2" />
+                    <img src="images/Dreamcatcher-movie-poster.jpg" id="item-3" />
+                    <img src="images/jaws_poster.JPG" id="item-4" />
+                    <img src="images/silence_of_the_lambs.jpg" id="item-5" />
+                    <img src="images/star_wars_poster.jpg" id="item-6" />
                 </div>
-                <div class="col-md-4 footer-nav animated fadeInUp">
-                    <h4>Menu</h4>
-                    <div class="col-md-6">
-                        <ul class="pages">
-                            <li><a href="#">Box Office</a></li>
-                            <li><a href="#">Comming Soon</a></li>
-                            <li><a href="#">Top Rated Movies</a></li>
-                            <li><a href="#">In Theaters</a></li>
-                            <li><a href="#">TV Series</a></li>
-                        </ul>
+                
+            </main>
+            <footer class="foot container footer">
+                <div class="row">
+                    <div class="col-md-3 footer-brand animated fadeInLeft">
+                        <h2>Logo</h2>
+                        <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis facere est sequi aliquam debitis
+                            eum, numquam exercitationem ipsa vel mollitia enim laboriosam necessitatibus corrupti, nihil
+                            sed! Repellat nesciunt eos vitae!</p>
+                        <p>© 2017 ItTalents, All rights reserved</p>
                     </div>
-                    <div class="col-md-6">
-                        <ul class="list">
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Contacts</a></li>
-                            <li><a href="#">Terms & Condition</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-2 footer-social animated fadeInDown">
-                    <h4>Follow Us</h4>
-                    <ul id="followUs">
-                        <li><a href="#"><img class="socialMediaFooter" src="images/facebook.png" alt=""></a></li>
-                        <li><a href="#"><img class="socialMediaFooter" src="images/instagram.png" alt=""></a></li>
-                        <li><a href="#"><img class="socialMediaFooter" src="images/twitter1.png" alt=""></a></li>
-                        <li><a href="#"><img class="socialMediaFooter" src="images/linkedIn.png" alt=""></a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3 footer-ns animated fadeInRight">
-                    <h4>Newsletter</h4>
-                    <p>A rover wearing a fuzzy suit doesn’t alarm the real penguins</p>
-                    <p>
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Search for...">
-                            <span class="input-group-btn">
-                            <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-envelope"></span></button>
-                            </span>
+                    <div class="col-md-4 footer-nav animated fadeInUp">
+                        <h4>Menu</h4>
+                        <div class="col-md-6">
+                            <ul class="pages">
+                                <li><a href="#">Box Office</a></li>
+                                <li><a href="#">Comming Soon</a></li>
+                                <li><a href="#">Top Rated Movies</a></li>
+                                <li><a href="#">In Theaters</a></li>
+                                <li><a href="#">TV Series</a></li>
+                            </ul>
                         </div>
-                    </p>
+                        <div class="col-md-6">
+                            <ul class="list">
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Contacts</a></li>
+                                <li><a href="#">Terms & Condition</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2 footer-social animated fadeInDown">
+                        <h4>Follow Us</h4>
+                        <ul id="followUs">
+                            <li><a href="#"><img class="socialMediaFooter" src="images/facebook.png" alt=""></a></li>
+                            <li><a href="#"><img class="socialMediaFooter" src="images/instagram.png" alt=""></a></li>
+                            <li><a href="#"><img class="socialMediaFooter" src="images/twitter1.png" alt=""></a></li>
+                            <li><a href="#"><img class="socialMediaFooter" src="images/linkedIn.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 footer-ns animated fadeInRight">
+                        <h4>Newsletter</h4>
+                        <p>A rover wearing a fuzzy suit doesn’t alarm the real penguins</p>
+                        <p>
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search for...">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-envelope"></span></button>
+                                </span>
+                            </div>
+                        </p>
+                    </div>
                 </div>
-            </div>
-        </footer>
+            </footer>
+        </div>
 </body>
 
 </html>
