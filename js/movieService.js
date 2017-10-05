@@ -1,4 +1,9 @@
+var arrayMovies = []
+var searching = false;
 function getMovieInfo(movieTitle) {
+    if (!searching) {
+        
+    searching=true;
     return new Promise(function (resolve, reject) {
         var xhr = new XMLHttpRequest();
 
@@ -16,7 +21,16 @@ function getMovieInfo(movieTitle) {
         })
         xhr.open('GET', 'http://www.theimdbapi.org/api/find/movie?title='+movieTitle+'&year=', true)
         xhr.send(null)
-    })
+    }).then(function(movie) {
+       
+        arrayMovies.push(movie)
+
+      }, function(err) {
+        console.log(err)
+      }).finally(function () {
+          searching=true;
+      })
+    }
 }
 // getMovieInfo("the matrix")
 
