@@ -183,31 +183,35 @@
                 <div id='result'>
                 </div>
                 <!-- END OF CAROUSEL -->
-                	
+
                 <div class="container">
                     <div class="row">
-                        <div class="col-sm-8" >
+                        <div class="col-sm-8">
                             <div class="row moviePrint">
                                 <div id="printHere">
                                     <script id="movieDIv" type="text/x-handlebars-template">
                                         {{#each news}}
                                         <div class="slides">
-                                            <img src="{{image}}">
-                                            <div class="boxNewsContent">
-                                                <h5>Title: {{title}}</h5>
-                                                <p>Year: {{year}}</p>
-                                                <p>Rated: {{rated}}</p>
-                                                <p>Released: {{released}}</p>
-                                                <p>Runtime: {{runtime}}</p>
-                                                <p>Genre: {{genre}}</p>
-                                                <p>Director: {{director}}</p>
-                                                <p>Writer: {{writer}}</p>                                
-                                                <p>Actors: {{actors}}</p>                                
-                                                <p>Plot: {{plot}}</p>                                
-                                                <p>Language: {{language}}</p>
-                                                <p>Country: {{country}}</p>
-                                                <p>Awards: {{awards}}</p>
-                                                <p> {{text}} </p>
+                                            <div class="boxNewsContent" style="display:table">
+                                                <div style="vertical-align:middle; display:table-cell;padding-right:10px">
+                                                    <img style="height:400px" src="{{image}}">
+                                                </div>
+                                                <div style="vertical-align:middle; display:table-cell">
+                                                    <h5>Title: {{title}}</h5>
+                                                    <p>Year: {{year}}</p>
+                                                    <p>Rated: {{rated}}</p>
+                                                    <p>Released: {{released}}</p>
+                                                    <p>Runtime: {{runtime}}</p>
+                                                    <p>Genre: {{genre}}</p>
+                                                    <p>Director: {{director}}</p>
+                                                    <p>Writer: {{writer}}</p>
+                                                    <p>Actors: {{actors}}</p>
+                                                    <!-- <p>Plot: {{plot}}</p> -->
+                                                    <p>Language: {{language}}</p>
+                                                    <p>Country: {{country}}</p>
+                                                    <p>Awards: {{awards}}</p>
+                                                    
+                                                </div>
                                             </div>
                                         </div>
                                         {{/each}}
@@ -215,10 +219,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-4" style="height: 200px;">.col-sm-4</div>
+                        <div class="col-sm-4" style="height: 200px;"></div>
                     </div>
                 </div>
-                
+
             </main>
 
 

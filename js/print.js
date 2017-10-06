@@ -1,13 +1,13 @@
 document.addEventListener('DOMContentLoaded', function () {
     var movie = [];
-
-    var templateNews = document.getElementById('movieDIv').innerHTML;
+    var templateMovie = document.getElementById('movieDIv').innerHTML;
     var searchEnter = document.getElementById("search-enter").addEventListener("click", function (event) {
         event.preventDefault()
+    // document.getElementById('printHere').innerHTML= ""
 
         // movie.push(getMovieInfo(document.querySelector("#srch-term").value))
         getMovieInfo(document.querySelector("#srch-term").value).then(function () {
-            var allNews = {
+            var allMovies = {
                 news: [
                     { image:arrayMovies[0].Poster, title:arrayMovies[0].Title ,year:arrayMovies[0].Year,rated:arrayMovies[0].Rated,
 
@@ -24,8 +24,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         text:arrayMovies[0].Title},
                 ]
             }
-            var template = Handlebars.compile(templateNews);
-            var readyHTML = template(allNews);
+            var template = Handlebars.compile(templateMovie);
+            var readyHTML = template(allMovies);
             document.getElementById('printHere').innerHTML = readyHTML;
         })
     })
