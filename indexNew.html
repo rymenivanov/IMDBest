@@ -183,19 +183,42 @@
                 <div id='result'>
                 </div>
                 <!-- END OF CAROUSEL -->
-                <div id="printHere">
-                    <script id="movieDIv" type="text/x-handlebars-template">
-                        {{#each news}}
-                        <div class="slides">
-                            <img src="{{image}}">
-                            <div class="boxNewsContent">
-                                <h5>{{title}}</h5>
-                                <p> {{text}} </p>
+                	
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-8" >
+                            <div class="row moviePrint">
+                                <div id="printHere">
+                                    <script id="movieDIv" type="text/x-handlebars-template">
+                                        {{#each news}}
+                                        <div class="slides">
+                                            <img src="{{image}}">
+                                            <div class="boxNewsContent">
+                                                <h5>Title: {{title}}</h5>
+                                                <p>Year: {{year}}</p>
+                                                <p>Rated: {{rated}}</p>
+                                                <p>Released: {{released}}</p>
+                                                <p>Runtime: {{runtime}}</p>
+                                                <p>Genre: {{genre}}</p>
+                                                <p>Director: {{director}}</p>
+                                                <p>Writer: {{writer}}</p>                                
+                                                <p>Actors: {{actors}}</p>                                
+                                                <p>Plot: {{plot}}</p>                                
+                                                <p>Language: {{language}}</p>
+                                                <p>Country: {{country}}</p>
+                                                <p>Awards: {{awards}}</p>
+                                                <p> {{text}} </p>
+                                            </div>
+                                        </div>
+                                        {{/each}}
+                                    </script>
+                                </div>
                             </div>
                         </div>
-                        {{/each}}
-                    </script>
+                        <div class="col-sm-4" style="height: 200px;">.col-sm-4</div>
+                    </div>
                 </div>
+                
             </main>
 
 

@@ -1,7 +1,7 @@
 var arrayMovies = []
-var searching = false;
+// var searching = false;
 function getMovieInfo(movieTitle) {
-    if (!searching) {
+    // if (!searching) {
         
     searching=true;
     return new Promise(function (resolve, reject) {
@@ -19,19 +19,17 @@ function getMovieInfo(movieTitle) {
                 }
             }
         })
-        xhr.open('GET', 'http://www.theimdbapi.org/api/find/movie?title='+movieTitle+'&year=', true)
+        xhr.open('GET', 'http://www.omdbapi.com/?t='+movieTitle+'&apikey=PlsBanMe', true)
         xhr.send(null)
     }).then(function(movie) {
        
         arrayMovies.push(movie)
-
+        // searching=true
       }, function(err) {
         console.log(err)
-      }).finally(function () {
-          searching=true;
       })
     }
-}
+// }
 // getMovieInfo("the matrix")
 
 
