@@ -221,3 +221,8 @@ email {
 textarea#newoptions {
     width: 430px;
 }
+
+#printHereIdiot{
+    display: none;
+}
+
