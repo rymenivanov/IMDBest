@@ -1,0 +1,398 @@
+[
+    {
+        "Title": "Baby Driver",
+        "Year": "2017",
+        "Rated": "R",
+        "Released": "28 Jun 2017",
+        "Runtime": "112 min",
+        "Genre": "Action, Crime, Music",
+        "Director": "Edgar Wright",
+        "Writer": "Edgar Wright",
+        "Actors": "Ansel Elgort, Jon Bernthal, Jon Hamm, Eiza González",
+        "Plot": "After being coerced into working for a crime boss, a young getaway driver finds himself taking part in a heist doomed to fail.",
+        "Language": "English, American Sign Language",
+        "Country": "UK, USA",
+        "Awards": "5 wins & 2 nominations.",
+        "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjM3MjQ1MzkxNl5BMl5BanBnXkFtZTgwODk1ODgyMjI@._V1_SX300.jpg",
+        "Ratings": [
+            {
+                "Source": "Internet Movie Database",
+                "Value": "8.0/10"
+            },
+            {
+                "Source": "Rotten Tomatoes",
+                "Value": "93%"
+            },
+            {
+                "Source": "Metacritic",
+                "Value": "86/100"
+            }
+        ],
+        "Metascore": "86",
+        "imdbRating": "8.0",
+        "imdbVotes": "138,970",
+        "imdbID": "tt3890160",
+        "Type": "movie",
+        "DVD": "12 Sep 2017",
+        "BoxOffice": "$105,532,537",
+        "Production": "Sony Pictures",
+        "Website": "http://www.babydriver-movie.com/",
+        "Response": "True"
+    },
+    {
+        "Title": "Baywatch",
+        "Year": "2017",
+        "Rated": "R",
+        "Released": "25 May 2017",
+        "Runtime": "116 min",
+        "Genre": "Action, Comedy, Crime",
+        "Director": "Seth Gordon",
+        "Writer": "Michael Berk (based on the series \"Baywatch\" created by), Douglas Schwartz (based on the series \"Baywatch\" created by), Gregory J. Bonann (based on the series \"Baywatch\" created by), Jay Scherick (story by), David Ronn (story by), Thomas Lennon (story by), Robert Ben Garant (story by), Damian Shannon (screenplay by), Mark Swift (screenplay by)",
+        "Actors": "Dwayne Johnson, Zac Efron, Priyanka Chopra, Alexandra Daddario",
+        "Plot": "Devoted lifeguard Mitch Buchannon butts heads with a brash new recruit, as they uncover a criminal plot that threatens the future of the bay.",
+        "Language": "English",
+        "Country": "USA",
+        "Awards": "2 wins & 3 nominations.",
+        "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BNTA4MjQ0ODQzNF5BMl5BanBnXkFtZTgwNzA5NjYzMjI@._V1_SX300.jpg",
+        "Ratings": [
+            {
+                "Source": "Internet Movie Database",
+                "Value": "5.6/10"
+            },
+            {
+                "Source": "Rotten Tomatoes",
+                "Value": "18%"
+            },
+            {
+                "Source": "Metacritic",
+                "Value": "37/100"
+            }
+        ],
+        "Metascore": "37",
+        "imdbRating": "5.6",
+        "imdbVotes": "64,773",
+        "imdbID": "tt1469304",
+        "Type": "movie",
+        "DVD": "29 Aug 2017",
+        "BoxOffice": "$58,009,442",
+        "Production": "Paramount Pictures",
+        "Website": "https://www.facebook.com/BaywatchMovie",
+        "Response": "True"
+    },
+    {
+        "Title": "The Lord of the Rings: The Fellowship of the Ring",
+        "Year": "2001",
+        "Rated": "PG-13",
+        "Released": "19 Dec 2001",
+        "Runtime": "178 min",
+        "Genre": "Adventure, Drama, Fantasy",
+        "Director": "Peter Jackson",
+        "Writer": "J.R.R. Tolkien (novel), Fran Walsh (screenplay), Philippa Boyens (screenplay), Peter Jackson (screenplay)",
+        "Actors": "Alan Howard, Noel Appleby, Sean Astin, Sala Baker",
+        "Plot": "A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle Earth from the Dark Lord Sauron.",
+        "Language": "English, Sindarin",
+        "Country": "New Zealand, USA",
+        "Awards": "Won 4 Oscars. Another 112 wins & 124 nominations.",
+        "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_SX300.jpg",
+        "Ratings": [
+            {
+                "Source": "Internet Movie Database",
+                "Value": "8.8/10"
+            },
+            {
+                "Source": "Rotten Tomatoes",
+                "Value": "91%"
+            },
+            {
+                "Source": "Metacritic",
+                "Value": "92/100"
+            }
+        ],
+        "Metascore": "92",
+        "imdbRating": "8.8",
+        "imdbVotes": "1,350,729",
+        "imdbID": "tt0120737",
+        "Type": "movie",
+        "DVD": "06 Aug 2002",
+        "BoxOffice": "$314,000,000",
+        "Production": "New Line Cinema",
+        "Website": "http://www.lordoftherings.net/film/trilogy/thefellowship.html",
+        "Response": "True"
+    },
+    {
+        "Title": "Titanic",
+        "Year": "1997",
+        "Rated": "PG-13",
+        "Released": "19 Dec 1997",
+        "Runtime": "194 min",
+        "Genre": "Drama, Romance",
+        "Director": "James Cameron",
+        "Writer": "James Cameron",
+        "Actors": "Leonardo DiCaprio, Kate Winslet, Billy Zane, Kathy Bates",
+        "Plot": "A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.",
+        "Language": "English, Swedish",
+        "Country": "USA",
+        "Awards": "Won 11 Oscars. Another 110 wins & 75 nominations.",
+        "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMDdmZGU3NDQtY2E5My00ZTliLWIzOTUtMTY4ZGI1YjdiNjk3XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg",
+        "Ratings": [
+            {
+                "Source": "Internet Movie Database",
+                "Value": "7.8/10"
+            },
+            {
+                "Source": "Rotten Tomatoes",
+                "Value": "88%"
+            },
+            {
+                "Source": "Metacritic",
+                "Value": "74/100"
+            }
+        ],
+        "Metascore": "74",
+        "imdbRating": "7.8",
+        "imdbVotes": "860,899",
+        "imdbID": "tt0120338",
+        "Type": "movie",
+        "DVD": "10 Sep 2012",
+        "BoxOffice": "N/A",
+        "Production": "Paramount Pictures",
+        "Website": "http://www.titanicmovie.com/",
+        "Response": "True"
+    },
+    {
+        "Title": "Jaws",
+        "Year": "1975",
+        "Rated": "PG",
+        "Released": "20 Jun 1975",
+        "Runtime": "124 min",
+        "Genre": "Adventure, Drama, Thriller",
+        "Director": "Steven Spielberg",
+        "Writer": "Peter Benchley (screenplay), Carl Gottlieb (screenplay), Peter Benchley (based on the novel by)",
+        "Actors": "Roy Scheider, Robert Shaw, Richard Dreyfuss, Lorraine Gary",
+        "Plot": "A giant great white shark arrives on the shores of a New England beach resort and wreaks havoc with bloody attacks on swimmers, until a local sheriff teams up with a marine biologist and an old seafarer to hunt the monster down.",
+        "Language": "English",
+        "Country": "USA",
+        "Awards": "Won 3 Oscars. Another 10 wins & 18 nominations.",
+        "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMmVmODY1MzEtYTMwZC00MzNhLWFkNDMtZjAwM2EwODUxZTA5XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg",
+        "Ratings": [
+            {
+                "Source": "Internet Movie Database",
+                "Value": "8.0/10"
+            },
+            {
+                "Source": "Rotten Tomatoes",
+                "Value": "97%"
+            },
+            {
+                "Source": "Metacritic",
+                "Value": "86/100"
+            }
+        ],
+        "Metascore": "86",
+        "imdbRating": "8.0",
+        "imdbVotes": "454,558",
+        "imdbID": "tt0073195",
+        "Type": "movie",
+        "DVD": "11 Jul 2000",
+        "BoxOffice": "N/A",
+        "Production": "Universal Pictures",
+        "Website": "http://www.jaws25.com/",
+        "Response": "True"
+    },
+    {
+        "Title": "What Happened to Monday",
+        "Year": "2017",
+        "Rated": "N/A",
+        "Released": "18 Aug 2017",
+        "Runtime": "123 min",
+        "Genre": "Action, Adventure, Crime",
+        "Director": "Tommy Wirkola",
+        "Writer": "Max Botkin, Kerry Williamson",
+        "Actors": "Noomi Rapace, Glenn Close, Willem Dafoe, Marwan Kenzari",
+        "Plot": "In a world where families are limited to one child due to overpopulation, a set of identical septuplets must avoid being put to a long sleep by the government and dangerous infighting while investigating the disappearance of one of their own.",
+        "Language": "English",
+        "Country": "UK, France, Belgium, USA",
+        "Awards": "1 nomination.",
+        "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjE4MDQxMDg3MF5BMl5BanBnXkFtZTgwNjQ0MTcwMzI@._V1_SX300.jpg",
+        "Ratings": [
+            {
+                "Source": "Internet Movie Database",
+                "Value": "6.9/10"
+            },
+            {
+                "Source": "Rotten Tomatoes",
+                "Value": "61%"
+            },
+            {
+                "Source": "Metacritic",
+                "Value": "47/100"
+            }
+        ],
+        "Metascore": "47",
+        "imdbRating": "6.9",
+        "imdbVotes": "19,460",
+        "imdbID": "tt1536537",
+        "Type": "movie",
+        "DVD": "18 Aug 2017",
+        "BoxOffice": "N/A",
+        "Production": "Netflix",
+        "Website": "N/A",
+        "Response": "True"
+    },
+    {
+        "Title": "Now You See Me",
+        "Year": "2013",
+        "Rated": "PG-13",
+        "Released": "31 May 2013",
+        "Runtime": "115 min",
+        "Genre": "Crime, Mystery, Thriller",
+        "Director": "Louis Leterrier",
+        "Writer": "Ed Solomon (screenplay), Boaz Yakin (screenplay), Edward Ricourt (screenplay), Boaz Yakin (story), Edward Ricourt (story)",
+        "Actors": "Jesse Eisenberg, Mark Ruffalo, Woody Harrelson, Isla Fisher",
+        "Plot": "An F.B.I. Agent, and an Interpol Detective, track a team of illusionists, who pull off bank heists during their performances, and reward their audiences with the money.",
+        "Language": "English, French",
+        "Country": "USA, France",
+        "Awards": "1 win & 3 nominations.",
+        "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTY0NDY3MDMxN15BMl5BanBnXkFtZTcwOTM5NzMzOQ@@._V1_SX300.jpg",
+        "Ratings": [
+            {
+                "Source": "Internet Movie Database",
+                "Value": "7.3/10"
+            },
+            {
+                "Source": "Rotten Tomatoes",
+                "Value": "49%"
+            },
+            {
+                "Source": "Metacritic",
+                "Value": "50/100"
+            }
+        ],
+        "Metascore": "50",
+        "imdbRating": "7.3",
+        "imdbVotes": "503,747",
+        "imdbID": "tt1670345",
+        "Type": "movie",
+        "DVD": "03 Sep 2013",
+        "BoxOffice": "$117,698,894",
+        "Production": "Lionsgate Films",
+        "Website": "http://nowyouseememovie.com/",
+        "Response": "True"
+    },
+    {
+        "Title": "Now You See Me 2",
+        "Year": "2016",
+        "Rated": "PG-13",
+        "Released": "10 Jun 2016",
+        "Runtime": "129 min",
+        "Genre": "Action, Adventure, Comedy",
+        "Director": "Jon M. Chu",
+        "Writer": "Ed Solomon (screenplay by), Ed Solomon (story by), Peter Chiarelli (story by), Boaz Yakin (based on characters created by), Edward Ricourt (based on characters created by)",
+        "Actors": "Jesse Eisenberg, Mark Ruffalo, Woody Harrelson, Dave Franco",
+        "Plot": "The Four Horsemen resurface, and are forcibly recruited by a tech genius to pull off their most impossible heist yet.",
+        "Language": "English, Mandarin, Cantonese",
+        "Country": "France, USA",
+        "Awards": "4 nominations.",
+        "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BNzQ0NDgwODQ3NV5BMl5BanBnXkFtZTgwOTYxNjc2ODE@._V1_SX300.jpg",
+        "Ratings": [
+            {
+                "Source": "Internet Movie Database",
+                "Value": "6.5/10"
+            },
+            {
+                "Source": "Rotten Tomatoes",
+                "Value": "34%"
+            },
+            {
+                "Source": "Metacritic",
+                "Value": "46/100"
+            }
+        ],
+        "Metascore": "46",
+        "imdbRating": "6.5",
+        "imdbVotes": "171,527",
+        "imdbID": "tt3110958",
+        "Type": "movie",
+        "DVD": "06 Sep 2016",
+        "BoxOffice": "$65,030,563",
+        "Production": "Lionsgate",
+        "Website": "http://www.nowyouseeme.movie/",
+        "Response": "True"
+    },
+    {
+        "Title": "Blade Runner 2049",
+        "Year": "2017",
+        "Rated": "R",
+        "Released": "06 Oct 2017",
+        "Runtime": "163 min",
+        "Genre": "Sci-Fi, Thriller",
+        "Director": "Denis Villeneuve",
+        "Writer": "Hampton Fancher (screenplay by), Michael Green (screenplay by), Hampton Fancher (story by), Philip K. Dick (based on characters from the novel \"Do Androids Dream of Electric Sheep?\")",
+        "Actors": "Ryan Gosling, Dave Bautista, Robin Wright, Mark Arnold",
+        "Plot": "A young blade runner's discovery of a long-buried secret leads him to track down former blade runner Rick Deckard, who's been missing for thirty years.",
+        "Language": "English",
+        "Country": "USA, UK, Canada",
+        "Awards": "2 wins.",
+        "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BNzA1Njg4NzYxOV5BMl5BanBnXkFtZTgwODk5NjU3MzI@._V1_SX300.jpg",
+        "Ratings": [
+            {
+                "Source": "Internet Movie Database",
+                "Value": "8.5/10"
+            },
+            {
+                "Source": "Metacritic",
+                "Value": "85/100"
+            }
+        ],
+        "Metascore": "85",
+        "imdbRating": "8.5",
+        "imdbVotes": "1,443",
+        "imdbID": "tt1856101",
+        "Type": "movie",
+        "DVD": "N/A",
+        "BoxOffice": "N/A",
+        "Production": "Warner Bros. Pictures",
+        "Website": "http://bladerunnermovie.com",
+        "Response": "True"
+    },
+    {
+        "Title": "It",
+        "Year": "2017",
+        "Rated": "R",
+        "Released": "08 Sep 2017",
+        "Runtime": "135 min",
+        "Genre": "Drama, Horror, Thriller",
+        "Director": "Andy Muschietti",
+        "Writer": "Chase Palmer (screenplay by), Cary Fukunaga (screenplay by), Gary Dauberman (screenplay by), Stephen King (based on the novel by)",
+        "Actors": "Jaeden Lieberher, Jeremy Ray Taylor, Sophia Lillis, Finn Wolfhard",
+        "Plot": "A group of bullied kids band together when a shapeshifting demon, taking the appearance of a clown, begins hunting children.",
+        "Language": "English",
+        "Country": "USA, Canada",
+        "Awards": "1 win.",
+        "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BOTE0NWEyNDYtYWI5MC00MWY0LTg1NDctZjAwMjkyMWJiNzk1XkEyXkFqcGdeQXVyNjk5NDA3OTk@._V1_SX300.jpg",
+        "Ratings": [
+            {
+                "Source": "Internet Movie Database",
+                "Value": "7.9/10"
+            },
+            {
+                "Source": "Rotten Tomatoes",
+                "Value": "85%"
+            },
+            {
+                "Source": "Metacritic",
+                "Value": "70/100"
+            }
+        ],
+        "Metascore": "70",
+        "imdbRating": "7.9",
+        "imdbVotes": "115,814",
+        "imdbID": "tt1396484",
+        "Type": "movie",
+        "DVD": "N/A",
+        "BoxOffice": "$266,096,375",
+        "Production": "Warner Bros. Pictures",
+        "Website": "http://www.Itthemovie.com",
+        "Response": "True"
+    }
+]
