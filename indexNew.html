@@ -23,6 +23,7 @@
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.amd.js"></script> -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+    <script src="js/userService.js"></script>
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <!-- <script>
@@ -96,8 +97,8 @@
                                     <li><a href="#">Quizes</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#">Whatch List</a></li>
-                            <li class="dropdown">
+                            <li id="watchlist" style="display:none"><a href="#">Watchlist</a></li>
+                            <li class="dropdown" id="toHide">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Sign in</b> <span class="caret"></span></a>
                                 <ul id="login-dp" class="dropdown-menu">
                                     <li>
@@ -112,11 +113,11 @@
                                                         <div id="sectionA" class="tab-pane fade in active">
                                                             <div class="innter-form">
                                                                 <form class="sa-innate-form" method="post">
-                                                                    <label>Email Address</label>
-                                                                    <input type="text" name="username">
+                                                                    <label>User Name</label>
+                                                                    <input type="text" name="username" id="inputLoginName">
                                                                     <label>Password</label>
-                                                                    <input type="password" name="password">
-                                                                    <button type="submit" style="margin:auto">Sign In</button>
+                                                                    <input type="password" name="password" id="inputLoginPassword">
+                                                                    <button type="submit" style="margin:auto" id="signIN">Sign In</button>
                                                                 </form>
                                                             </div>
                                                             <div class="social-login container-fluid">
@@ -132,13 +133,13 @@
                                                         <div id="sectionB" class="tab-pane fade">
                                                             <div class="innter-form">
                                                                 <form class="sa-innate-form" method="post">
-                                                                    <label>Name</label>
-                                                                    <input type="text" name="username">
+                                                                    <label>User Name</label>
+                                                                    <input type="text" name="username" id="inputRegisterName">
                                                                     <label>Email Address</label>
-                                                                    <input type="text" name="username">
+                                                                    <input type="text" name="username" id="inputRegisterEmail">
                                                                     <label>Password</label>
-                                                                    <input type="password" name="password">
-                                                                    <button type="submit">Join now</button>
+                                                                    <input type="password" name="password"  id="inputRegisterPassword">
+                                                                    <button type="submit" id="joinBtn">Join now</button>
                                                                     <p style="color:whitesmoke">By clicking Join now, you agree to hifriends's User Agreement,
                                                                         Privacy Policy, and Cookie Policy.</p>
                                                                 </form>
@@ -159,6 +160,7 @@
                                     </li>
                                 </ul>
                             </li>
+                            <li id="logout" style="display:none"><a href="#">Logout</a></li>
                         </ul>
 
 

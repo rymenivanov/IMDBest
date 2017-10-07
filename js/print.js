@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
+    /////////print movies////////////////////////////////
+
     // var movie = [];
     var index = 0
     var templateMovie = document.getElementById('movieDIv').innerHTML;
@@ -57,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function () {
         
         })
     })
-        // var printMovie= function() {
+    // var printMovie= function() {
         // console.log("asd")
         // var film = arrayMovies.find(function(movie) {
         //     movie.Title == searchlink.innerText
@@ -65,4 +67,42 @@ document.addEventListener('DOMContentLoaded', function () {
         // console.log(film)
     // }
 
+
+    /////////print movies/////////////////////////////////
+    /////////userNamelogin////////////////////////////////
+    document.getElementById("signIN").addEventListener("click",function () {
+        event.preventDefault();
+        var userName = document.getElementById("inputLoginName").value
+        var userPassword = document.getElementById("inputLoginPassword").value
+
+        if (userList.login(userName,userPassword)) {
+            var watchlist = document.getElementById("watchlist").style.display="block"
+            // alert("BRAVO VLEZNA")
+            var toHide =document.getElementById("toHide").style.display="none"
+            var logout = document.getElementById("logout").style.display="block"
+        }
+    })
+    /////////userNamelogin////////////////////////////////
+    /////////userNameRegistration////////////////////////////////  
+    document.getElementById("joinBtn").addEventListener("click",function () {
+        event.preventDefault();
+        var userNameRegister = document.getElementById("inputRegisterName").value
+        var userPasswordRegister = document.getElementById("inputRegisterPassword").value
+        var userEmailRegister = document.getElementById("inputRegisterEmail").value
+
+        if (userList.addUser(userNameRegister,userPasswordRegister,userEmailRegister)) {
+            userList.addUser(userNameRegister,userPasswordRegister,userEmailRegister)
+            // alert("BRAVO VLEZNA")            
+        }
+    })
+    /////////userNameRegistration////////////////////////////////  
+    //////// logout//////////////////////////////////////////////
+    document.getElementById("logout").addEventListener("click",function () {
+        location.reload();
+    })
+    // $('#something').click(function() {
+    //     location.reload();
+    // });
+    /////////////logout//////////////
+    
 });
