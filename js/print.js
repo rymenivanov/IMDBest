@@ -24,7 +24,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         language:arrayMovies[index].Language,
                         country:arrayMovies[index].Country,
                         awards:arrayMovies[index].Awards,
-                        text:arrayMovies[index].Title},
+                        text:arrayMovies[index].Title,
+                        boxoffice:arrayMovies[index].BoxOffice,}
                 ]
             }
             index++

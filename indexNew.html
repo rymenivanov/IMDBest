@@ -5,14 +5,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ARK Movies</title>
-    <script src="node_modules/jquery/dist/jquery.js"></script>
     <link rel="icon" href="images/icon.png">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <script src="js/hoverNew.js"></script>
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/hoverNew.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/handlebars/dist/handlebars.min.js"></script>
     <script src="js/jquery.waterwheelCarousel.js"></script>
     <script src="js/jquery.waterwheelCarousel.min.js"></script>
@@ -183,14 +183,13 @@
                 <div id='result'>
                 </div>
                 <!-- END OF CAROUSEL -->
-
+                	
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-8">
-                            <div class="row moviePrint">
                                 <div id="printHere">
                                     <script id="movieDIv" type="text/x-handlebars-template">
-                                        {{#each news}}
+                                        <!-- {{#each news}} -->
                                         <div class="slides">
                                             <div class="boxNewsContent" style="display:table">
                                                 <div style="vertical-align:middle; display:table-cell;padding-right:10px">
@@ -210,6 +209,7 @@
                                                     <p>Language: {{language}}</p>
                                                     <p>Country: {{country}}</p>
                                                     <p>Awards: {{awards}}</p>
+                                                    <p>BoxOffice: {{boxoffice}}</p>
                                                     
                                                 </div>
                                             </div>
@@ -217,12 +217,12 @@
                                         {{/each}}
                                     </script>
                                 </div>
-                            </div>
                         </div>
                         <div class="col-sm-4" style="height: 200px;"></div>
                     </div>
                 </div>
 
+                
             </main>
 
 
