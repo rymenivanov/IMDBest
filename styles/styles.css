@@ -221,3 +221,16 @@ email {
 textarea#newoptions {
     width: 430px;
 }
+
+.aside img{
+    height: 50px;
+    display: block;
+    float: left;
+    margin-bottom: 15px;
+}
+.aside a {
+    display: block;
+    cursor: pointer;
+    float: left;
+    padding-left: 15px;
+}

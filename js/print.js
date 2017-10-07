@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    var movie = [];
+    // var movie = [];
     var index = 0
     var templateMovie = document.getElementById('movieDIv').innerHTML;
     var searchEnter = document.getElementById("search-enter").addEventListener("click", function (event) {
@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
         
         // movie.push(getMovieInfo(document.querySelector("#srch-term").value))
         getMovieInfo(document.querySelector("#srch-term").value).then(function () {
+            document.querySelector("#srch-term").value = ""
             var allMovies = {
                 news: [
                     {   image:arrayMovies[index].Poster, 
@@ -28,10 +29,40 @@ document.addEventListener('DOMContentLoaded', function () {
                         boxoffice:arrayMovies[index].BoxOffice,}
                 ]
             }
+
+            var div = document.createElement("div")
+            div.className = "col-sm-12 aside"
+            var divImg = document.createElement("div")
+            var img = document.createElement("img")
+            img.src = arrayMovies[index].Poster
+            var divTitle = document.createElement("div")
+            var a = document.createElement("a")
+            // a.className = "printMovie"
+            // a.setAttribute("onclick","printMovie()")
+            a.innerText = arrayMovies[index].Title
+            divTitle.appendChild(a)
+            divImg.appendChild(img)
+            div.appendChild(divImg)
+            div.appendChild(divTitle)
+            document.querySelector(".aside").appendChild(div)
+            buton = true
+            
+                
+            
+
             index++
             var template = Handlebars.compile(templateMovie);
             var readyHTML = template(allMovies);
             document.getElementById('printHere').innerHTML = readyHTML;
+        
         })
     })
+        // var printMovie= function() {
+        // console.log("asd")
+        // var film = arrayMovies.find(function(movie) {
+        //     movie.Title == searchlink.innerText
+        // })
+        // console.log(film)
+    // }
+
 });

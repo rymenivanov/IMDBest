@@ -183,46 +183,47 @@
                 <div id='result'>
                 </div>
                 <!-- END OF CAROUSEL -->
-                	
+
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-8">
-                                <div id="printHere">
-                                    <script id="movieDIv" type="text/x-handlebars-template">
-                                        <!-- {{#each news}} -->
-                                        <div class="slides">
-                                            <div class="boxNewsContent" style="display:table">
-                                                <div style="vertical-align:middle; display:table-cell;padding-right:10px">
-                                                    <img style="height:400px" src="{{image}}">
-                                                </div>
-                                                <div style="vertical-align:middle; display:table-cell">
-                                                    <h5>Title: {{title}}</h5>
-                                                    <p>Year: {{year}}</p>
-                                                    <p>Rated: {{rated}}</p>
-                                                    <p>Released: {{released}}</p>
-                                                    <p>Runtime: {{runtime}}</p>
-                                                    <p>Genre: {{genre}}</p>
-                                                    <p>Director: {{director}}</p>
-                                                    <p>Writer: {{writer}}</p>
-                                                    <p>Actors: {{actors}}</p>
-                                                    <!-- <p>Plot: {{plot}}</p> -->
-                                                    <p>Language: {{language}}</p>
-                                                    <p>Country: {{country}}</p>
-                                                    <p>Awards: {{awards}}</p>
-                                                    <p>BoxOffice: {{boxoffice}}</p>
-                                                    
-                                                </div>
-                                            </div>
+                            <div id="printHere">
+                                <script id="movieDIv" type="text/x-handlebars-template">
+                                    <!-- {{#each news}} -->
+
+                                    <div class="boxNewsContent slides" style="display:table">
+                                        <div style="vertical-align:middle; display:table-cell;padding-right:10px">
+                                            <img style="height:400px" src="{{image}}">
                                         </div>
-                                        {{/each}}
-                                    </script>
-                                </div>
+                                        <div style="vertical-align:middle; display:table-cell">
+                                            <h3>{{title}} ({{year}})</h3>
+                                            <p>Rated: {{rated}}</p>
+                                            <p>Released: {{released}}</p>
+                                            <p>Runtime: {{runtime}}</p>
+                                            <p>Genre: {{genre}}</p>
+                                            <p>Director: {{director}}</p>
+                                            <p>Writer: {{writer}}</p>
+                                            <p>Actors: {{actors}}</p>
+                                            <!-- <p>Plot: {{plot}}</p> -->
+                                            <p>Language: {{language}}</p>
+                                            <p>Country: {{country}}</p>
+                                            <p>Awards: {{awards}}</p>
+                                            <p>BoxOffice: {{boxoffice}}</p>
+
+                                        </div>
+                                    </div>
+
+                                    <!-- {{/each}} -->
+                                </script>
+                            </div>
                         </div>
-                        <div class="col-sm-4" style="height: 200px;"></div>
+                        <div class="col-sm-4 aside" style="height: 200px;">
+                            <h3>Recently viewed</h3>
+                        </div>
                     </div>
                 </div>
 
-                
+
             </main>
 
 
