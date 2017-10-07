@@ -1,29 +1,33 @@
 document.addEventListener('DOMContentLoaded', function () {
     var movie = [];
+    var index = 0
     var templateMovie = document.getElementById('movieDIv').innerHTML;
     var searchEnter = document.getElementById("search-enter").addEventListener("click", function (event) {
         event.preventDefault()
     // document.getElementById('printHere').innerHTML= ""
-
+        
         // movie.push(getMovieInfo(document.querySelector("#srch-term").value))
         getMovieInfo(document.querySelector("#srch-term").value).then(function () {
             var allMovies = {
                 news: [
-                    { image:arrayMovies[0].Poster, title:arrayMovies[0].Title ,year:arrayMovies[0].Year,rated:arrayMovies[0].Rated,
-
-                        released:arrayMovies[0].Released,
-                        runtime:arrayMovies[0].Runtime,
-                        genre:arrayMovies[0].Genre,
-                        director:arrayMovies[0].Director,
-                        writer:arrayMovies[0].Writer,                                
-                        actors:arrayMovies[0].Actors,                                
-                        plot:arrayMovies[0].Plot,                  
-                        language:arrayMovies[0].Language,
-                        country:arrayMovies[0].Country,
-                        awards:arrayMovies[0].Awards,
-                        text:arrayMovies[0].Title},
+                    {   image:arrayMovies[index].Poster, 
+                        title:arrayMovies[index].Title,
+                        year:arrayMovies[index].Year,
+                        rated:arrayMovies[index].Rated,
+                        released:arrayMovies[index].Released,
+                        runtime:arrayMovies[index].Runtime,
+                        genre:arrayMovies[index].Genre,
+                        director:arrayMovies[index].Director,
+                        writer:arrayMovies[index].Writer,                                
+                        actors:arrayMovies[index].Actors,                                
+                        plot:arrayMovies[index].Plot,                  
+                        language:arrayMovies[index].Language,
+                        country:arrayMovies[index].Country,
+                        awards:arrayMovies[index].Awards,
+                        text:arrayMovies[index].Title},
                 ]
             }
+            index++
             var template = Handlebars.compile(templateMovie);
             var readyHTML = template(allMovies);
             document.getElementById('printHere').innerHTML = readyHTML;
