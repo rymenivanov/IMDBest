@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
-    var movie = [];
+    /////////print movies////////////////////////////////
+
+    // var movie = [];
     var index = 0
     var templateMovie = document.getElementById('movieDIv').innerHTML;
     var searchEnter = document.getElementById("search-enter").addEventListener("click", function (event) {
@@ -8,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
         
         // movie.push(getMovieInfo(document.querySelector("#srch-term").value))
         getMovieInfo(document.querySelector("#srch-term").value).then(function () {
+            document.querySelector("#srch-term").value = ""
             var allMovies = {
                 news: [
                     {   image:arrayMovies[index].Poster, 
@@ -28,10 +31,78 @@ document.addEventListener('DOMContentLoaded', function () {
                         boxoffice:arrayMovies[index].BoxOffice,}
                 ]
             }
+
+            var div = document.createElement("div")
+            div.className = "col-sm-12 aside"
+            var divImg = document.createElement("div")
+            var img = document.createElement("img")
+            img.src = arrayMovies[index].Poster
+            var divTitle = document.createElement("div")
+            var a = document.createElement("a")
+            // a.className = "printMovie"
+            // a.setAttribute("onclick","printMovie()")
+            a.innerText = arrayMovies[index].Title
+            divTitle.appendChild(a)
+            divImg.appendChild(img)
+            div.appendChild(divImg)
+            div.appendChild(divTitle)
+            document.querySelector(".aside").appendChild(div)
+            buton = true
+            
+                
+            
+
             index++
             var template = Handlebars.compile(templateMovie);
             var readyHTML = template(allMovies);
             document.getElementById('printHere').innerHTML = readyHTML;
+        
         })
     })
+    // var printMovie= function() {
+        // console.log("asd")
+        // var film = arrayMovies.find(function(movie) {
+        //     movie.Title == searchlink.innerText
+        // })
+        // console.log(film)
+    // }
+
+
+    /////////print movies/////////////////////////////////
+    /////////userNamelogin////////////////////////////////
+    document.getElementById("signIN").addEventListener("click",function () {
+        event.preventDefault();
+        var userName = document.getElementById("inputLoginName").value
+        var userPassword = document.getElementById("inputLoginPassword").value
+
+        if (userList.login(userName,userPassword)) {
+            var watchlist = document.getElementById("watchlist").style.display="block"
+            // alert("BRAVO VLEZNA")
+            var toHide =document.getElementById("toHide").style.display="none"
+            var logout = document.getElementById("logout").style.display="block"
+        }
+    })
+    /////////userNamelogin////////////////////////////////
+    /////////userNameRegistration////////////////////////////////  
+    document.getElementById("joinBtn").addEventListener("click",function () {
+        event.preventDefault();
+        var userNameRegister = document.getElementById("inputRegisterName").value
+        var userPasswordRegister = document.getElementById("inputRegisterPassword").value
+        var userEmailRegister = document.getElementById("inputRegisterEmail").value
+
+        if (userList.addUser(userNameRegister,userPasswordRegister,userEmailRegister)) {
+            userList.addUser(userNameRegister,userPasswordRegister,userEmailRegister)
+            // alert("BRAVO VLEZNA")            
+        }
+    })
+    /////////userNameRegistration////////////////////////////////  
+    //////// logout//////////////////////////////////////////////
+    document.getElementById("logout").addEventListener("click",function () {
+        location.reload();
+    })
+    // $('#something').click(function() {
+    //     location.reload();
+    // });
+    /////////////logout//////////////
+    
 });

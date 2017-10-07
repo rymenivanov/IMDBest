@@ -222,6 +222,7 @@ textarea#newoptions {
     width: 430px;
 }
 
+<<<<<<< HEAD
 #printHereIdiot{
     display: none;
 }
@@ -230,3 +231,17 @@ textarea#newoptions {
     height: 400px;
 }
 
+=======
+.aside img{
+    height: 50px;
+    display: block;
+    float: left;
+    margin-bottom: 15px;
+}
+.aside a {
+    display: block;
+    cursor: pointer;
+    float: left;
+    padding-left: 15px;
+}
+>>>>>>> 7f18f26eadd8879b7a3a2cc4d46f2ac44e1fc49c
