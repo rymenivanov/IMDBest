@@ -51,5 +51,3 @@ var userList = (function () {
     return new UserList();
     
 })();
-
-console.log("gakdghalkg")

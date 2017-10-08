@@ -26,6 +26,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
     <script src="js/userService.js"></script>
+    <script src="js/userController.js"></script>
 </head>
 
 <style>
@@ -248,9 +249,10 @@
                                                 </div>
                                                 <div class="back">
                                                     <p>{{plot}}</p>
-                                                    <button id="watchlist" style="position:fixed;bottom:0;background-color: rgb(52, 52, 52);
-                                                    " type="button" class="btn btn-primary btn-block">Add to Watchlist</button>
+                                                    <div id="buttonForWatch">
+                                                    <!-- <button id="addToWatchlist" style="position:fixed;bottom:0;background-color: rgb(52, 52, 52);" type="button" class="btn btn-primary btn-block">Add to Watchlist</button> -->
                                                 </div>
+                                            </div>
                                             </div>
                                         </div>
                                         <div style="vertical-align:middle; display:table-cell">
