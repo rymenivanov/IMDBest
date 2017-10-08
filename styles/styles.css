@@ -222,16 +222,19 @@ textarea#newoptions {
     width: 430px;
 }
 
-<<<<<<< HEAD
+.OWmovies{
+    margin-bottom: 5px;
+}
+
 #printHereIdiot{
     display: none;
+    width: 70%;
 }
 
 #printHereIdiot img{
     height: 400px;
 }
 
-=======
 .aside img{
     height: 50px;
     display: block;
@@ -244,4 +247,24 @@ textarea#newoptions {
     float: left;
     padding-left: 15px;
 }
->>>>>>> 7f18f26eadd8879b7a3a2cc4d46f2ac44e1fc49c
+
+.tMovies img{
+    height: 70px;
+    display: block;
+    margin: auto;
+    padding: 10px;
+}
+
+.inTheaters{
+    display: none;
+}
+
+.tMovies{
+    text-align: center;
+    width: 150px;
+    height: 100px;
+    /* border: 2px solid #3A3A3A; */
+    display: block;
+    float: left;
+    margin-right: 5px;
+}

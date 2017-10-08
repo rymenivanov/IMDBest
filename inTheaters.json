@@ -1,0 +1,166 @@
+{
+    "movies": [
+        {
+            "Title": "Marshall",
+            "Year": "2017",
+            "Rated": "PG-13",
+            "Released": "13 Oct 2017",
+            "Runtime": "N/A",
+            "Genre": "Biography, Drama",
+            "Director": "Reginald Hudlin",
+            "Writer": "Jacob Koskoff, Michael Koskoff",
+            "Actors": "Dan Stevens, Sophia Bush, Kate Hudson, Chadwick Boseman",
+            "Plot": "About a young Thurgood Marshall, the first African-American Supreme Court Justice, as he battles through one of his career-defining cases.",
+            "Language": "English",
+            "Country": "USA",
+            "Awards": "N/A",
+            "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjExODQ3OTMzMF5BMl5BanBnXkFtZTgwNTg2Mzc4MjI@._V1_SX300.jpg",
+            "Ratings": [],
+            "Metascore": "N/A",
+            "imdbRating": "N/A",
+            "imdbVotes": "N/A",
+            "imdbID": "tt5301662",
+            "Type": "movie",
+            "DVD": "N/A",
+            "BoxOffice": "N/A",
+            "Production": "N/A",
+            "Website": "N/A",
+            "Response": "True"
+        },
+        {
+            "Title": "The Foreigner",
+            "Year": "2017",
+            "Rated": "R",
+            "Released": "13 Oct 2017",
+            "Runtime": "114 min",
+            "Genre": "Action, Thriller",
+            "Director": "Martin Campbell",
+            "Writer": "David Marconi (screenplay by), Stephen Leather (based on the novel \"The Chinaman\" by)",
+            "Actors": "Katie Leung, Jackie Chan, Rufus Jones, Mark Tandy",
+            "Plot": "A humble businessman with a buried past seeks justice when his daughter is killed in an act of terrorism. A cat-and-mouse conflict ensues with a government official, whose past may hold clues to the killers' identities.",
+            "Language": "English, Mandarin",
+            "Country": "UK, China",
+            "Awards": "N/A",
+            "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BM2RlMjcyMGQtZTU3OC00NGRlLWExMGEtYjU3ZjUyMDc0NWZmXkEyXkFqcGdeQXVyNTI4MzE4MDU@._V1_SX300.jpg",
+            "Ratings": [
+                {
+                    "Source": "Internet Movie Database",
+                    "Value": "7.5/10"
+                }
+            ],
+            "Metascore": "N/A",
+            "imdbRating": "7.5",
+            "imdbVotes": "984",
+            "imdbID": "tt1615160",
+            "Type": "movie",
+            "DVD": "N/A",
+            "BoxOffice": "N/A",
+            "Production": "STX Films",
+            "Website": "http://TheForeignerMovie.com",
+            "Response": "True"
+        },
+        {
+            "Title": "Happy Death Day",
+            "Year": "2017",
+            "Rated": "PG-13",
+            "Released": "13 Oct 2017",
+            "Runtime": "N/A",
+            "Genre": "Horror, Mystery, Thriller",
+            "Director": "Christopher Landon",
+            "Writer": "Scott Lobdell",
+            "Actors": "Jessica Rothe, Israel Broussard, Ruby Modine, Rachel Matthews",
+            "Plot": "A college student relives the day of her murder with both its unexceptional details and terrifying end until she discovers her killer's identity.",
+            "Language": "English",
+            "Country": "USA",
+            "Awards": "N/A",
+            "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMmNiMjBmYWItMTFjMS00ZmRjLWIwNDgtMGNkYTI2M2FkOWJiXkEyXkFqcGdeQXVyNDg2MjUxNjM@._V1_SX300.jpg",
+            "Ratings": [],
+            "Metascore": "N/A",
+            "imdbRating": "N/A",
+            "imdbVotes": "N/A",
+            "imdbID": "tt5308322",
+            "Type": "movie",
+            "DVD": "N/A",
+            "BoxOffice": "N/A",
+            "Production": "Universal Studios",
+            "Website": "N/A",
+            "Response": "True"
+        },
+        {
+            "Title": "78/52",
+            "Year": "2017",
+            "Rated": "N/A",
+            "Released": "13 Oct 2017",
+            "Runtime": "91 min",
+            "Genre": "Documentary",
+            "Director": "Alexandre O. Philippe",
+            "Writer": "N/A",
+            "Actors": "Alan Barnette, Justin Benson, Peter Bogdanovich, Marco Calavita",
+            "Plot": "An unprecedented look at the iconic shower scene in Alfred Hitchcock's Psycho (1960), the \"man behind the curtain\", and the screen murder that profoundly changed the course of world cinema.",
+            "Language": "English",
+            "Country": "USA",
+            "Awards": "1 win & 3 nominations.",
+            "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTg2NjMzMDAxMl5BMl5BanBnXkFtZTgwMDkxOTY0MzI@._V1_SX300.jpg",
+            "Ratings": [
+                {
+                    "Source": "Internet Movie Database",
+                    "Value": "7.6/10"
+                },
+                {
+                    "Source": "Rotten Tomatoes",
+                    "Value": "95%"
+                }
+            ],
+            "Metascore": "N/A",
+            "imdbRating": "7.6",
+            "imdbVotes": "195",
+            "imdbID": "tt4372240",
+            "Type": "movie",
+            "DVD": "13 Oct 2017",
+            "BoxOffice": "N/A",
+            "Production": "IFC Films",
+            "Website": "N/A",
+            "Response": "True"
+        },
+        {
+            "Title": "Breathe",
+            "Year": "2017",
+            "Rated": "PG-13",
+            "Released": "13 Oct 2017",
+            "Runtime": "117 min",
+            "Genre": "Biography, Drama, Romance",
+            "Director": "Andy Serkis",
+            "Writer": "William Nicholson (screenplay)",
+            "Actors": "Diana Rigg, Claire Foy, Andrew Garfield, Dean-Charles Chapman",
+            "Plot": "The inspiring true love story of Robin and Diana Cavendish, an adventurous couple who refuse to give up in the face of a devastating disease. Their heartwarming celebration of human possibility marks the directorial debut of Andy Serkis.",
+            "Language": "English",
+            "Country": "UK",
+            "Awards": "N/A",
+            "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BNWQ2YWU1YjgtNzExZC00NmViLWJiODgtYjk0ZGEyYmY4YjlmXkEyXkFqcGdeQXVyNDExMzMxNjE@._V1_SX300.jpg",
+            "Ratings": [
+                {
+                    "Source": "Internet Movie Database",
+                    "Value": "7.4/10"
+                },
+                {
+                    "Source": "Rotten Tomatoes",
+                    "Value": "63%"
+                },
+                {
+                    "Source": "Metacritic",
+                    "Value": "50/100"
+                }
+            ],
+            "Metascore": "50",
+            "imdbRating": "7.4",
+            "imdbVotes": "72",
+            "imdbID": "tt5716464",
+            "Type": "movie",
+            "DVD": "N/A",
+            "BoxOffice": "N/A",
+            "Production": "Bleecker Street / Participant Media.",
+            "Website": "N/A",
+            "Response": "True"
+        }
+    ]
+}
