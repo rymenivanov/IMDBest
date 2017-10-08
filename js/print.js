@@ -1,6 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
     /////////print movies////////////////////////////////
 
+    
+        
+
     var recentlyWatched = [];
     var index = 0
     var templateMovie = document.getElementById('movieDIv').innerHTML;
@@ -41,26 +44,67 @@ document.addEventListener('DOMContentLoaded', function () {
             })
 
             if (povtarqSe == false) {
+                var spanID = "btnRecentlyViewed"+index
                 var div = document.createElement("div")
-                div.className = "col-sm-12 aside"
+                div.className = "col-sm-10"
+                div.style.height = "65px"
                 var divImg = document.createElement("div")
                 var img = document.createElement("img")
                 img.src = arrayMovies[index].Poster
-                var divTitle = document.createElement("div")
+                var span = document.createElement("span")
+                span.id = spanID
                 var a = document.createElement("a")
-                // a.className = "printMovie"
-                // a.setAttribute("onclick","printMovie()")
                 a.innerText = arrayMovies[index].Title
-                divTitle.appendChild(a)
+                span.appendChild(a)
                 divImg.appendChild(img)
                 div.appendChild(divImg)
-                div.appendChild(divTitle)
+                div.appendChild(span)
                 document.querySelector(".aside").appendChild(div)
                 recentlyWatched.push(arrayMovies[index].Title)
-                // buton = true
+
+
+                document.getElementById(spanID).addEventListener("click",function(e) {
+                        arrayMovies.forEach(function(element) {
+                            if (e.target.textContent == element.Title) {
+                                document.querySelector("#srch-term").value= e.target.textContent
+                                $("#search-enter").trigger("click")
+                            }
+                        })
+                    })
             }
+            // document.getElementById("#btnRecentlyViewed"+index).addEventListener("click",function(e) {
+            //     arrayMovies.forEach(function(element) {
+            //         if (e.value == element.Title) {
+            //             var newTemplate = {
+            //                 news: [
+            //                     {
+            //                         image: arrayMovies[element].Poster,
+            //                         title: arrayMovies[element].Title,
+            //                         year: arrayMovies[element].Year,
+            //                         rated: arrayMovies[element].Rated,
+            //                         released: arrayMovies[element].Released,
+            //                         runtime: arrayMovies[element].Runtime,
+            //                         genre: arrayMovies[element].Genre,
+            //                         director: arrayMovies[element].Director,
+            //                         writer: arrayMovies[element].Writer,
+            //                         actors: arrayMovies[element].Actors,
+            //                         plot: arrayMovies[element].Plot,
+            //                         language: arrayMovies[element].Language,
+            //                         country: arrayMovies[element].Country,
+            //                         awards: arrayMovies[element].Awards,
+            //                         text: arrayMovies[element].Title,
+            //                         boxoffice: arrayMovies[element].BoxOffice,
+            //                     } 
+            //                 ]
+            //             }
+            //             var template = Handlebars.compile(templateMovie);
+            //             var readyHTML = template(newTemplate);
+            //             document.getElementById('printHere').innerHTML = readyHTML;
+            //         }
+            //     })
+            // })
 
-
+            
 
 
             index++
@@ -70,13 +114,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         })
     })
-    // var printMovie= function() {
-    // console.log("asd")
-    // var film = arrayMovies.find(function(movie) {
-    //     movie.Title == searchlink.innerText
-    // })
-    // console.log(film)
-    // }
+    
 
 
     /////////print movies/////////////////////////////////
