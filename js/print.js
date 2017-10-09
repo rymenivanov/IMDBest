@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         }).then(function () {
             $("#buttonForWatch").append('<button id="addToWatchlist" style="position:fixed;bottom:0;background-color: rgb(52, 52, 52);"class="btn btn-primary btn-block">Add to Watchlist</button>')
-            // $("#buttonForWatch").append('<button id="addToWatchlist" style="position:fixed;bottom:0;background-color: rgb(52, 52, 52);"class="btn btn-primary btn-block"></button>')
+            $("#buttonForWatch").append('<button id="deleteFromWatchlist" style="display:none;position:fixed;bottom:35px;background-color: rgb(52, 52, 52);"class="btn btn-primary btn-block"><img style="height:20px;" src="images/trash_can.png" /></button>')
             $("#addToWatchlist").on("click", function () {
                 var loggedUser = JSON.parse(sessionStorage.getItem("Loged user"))
                 povtarqSe = false
