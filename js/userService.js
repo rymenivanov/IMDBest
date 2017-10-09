@@ -43,10 +43,6 @@ var userList = (function () {
         } 
         
     };
-    User.prototype.addTowatchlist = function (title) {
-        var movie = arrayMovies.find(movie=>movie.Title === title)
-        this.arrayWatchList.push(movie)
-    }
     
     return new UserList();
     

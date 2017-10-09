@@ -145,7 +145,11 @@
                                     <li><a href="#">Quizes</a></li>
                                 </ul>
                             </li>
-                            <li id="watchlist" style="display:none"><a href="#">Watchlist</a></li>
+                            <li class="dropdown">
+                                <a id="watchlist" style="display:none" href="#" class="dropdown-toggle" data-toggle="dropdown">Watchlist<b class="caret"></b></a>
+                                <ul class="dropdown-menu" id="watchlistDropdown">
+                                </ul>
+                            </li>
                             <li class="dropdown" id="toHide">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Sign in</b> <span class="caret"></span></a>
                                 <ul id="login-dp" class="dropdown-menu">
@@ -252,7 +256,7 @@
                                                 <div class="back">
                                                     <p>{{plot}}</p>
                                                     <div id="buttonForWatch">
-                                                        <!-- <button id="addToWatchlist" style="position:fixed;bottom:0;background-color: rgb(52, 52, 52);" type="button" class="btn btn-primary btn-block">Add to Watchlist</button> -->
+                                                   
                                                     </div>
                                                 </div>
                                             </div>
