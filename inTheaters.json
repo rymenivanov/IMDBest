@@ -161,6 +161,346 @@
             "Production": "Bleecker Street / Participant Media.",
             "Website": "N/A",
             "Response": "True"
+        },
+        {
+            "Title": "Wonderstruck",
+            "Year": "2017",
+            "Rated": "PG",
+            "Released": "20 Oct 2017",
+            "Runtime": "117 min",
+            "Genre": "Drama, Family, Mystery",
+            "Director": "Todd Haynes",
+            "Writer": "Brian Selznick (based on the book by), Brian Selznick (screenplay)",
+            "Actors": "Millicent Simmonds, Julianne Moore, Cory Michael Smith, James Urbaniak",
+            "Plot": "The story of a young boy in the Midwest is told simultaneously with a tale about a young girl in New York from fifty years ago as they both seek the same mysterious connection.",
+            "Language": "English",
+            "Country": "USA",
+            "Awards": "1 win & 1 nomination.",
+            "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjM3NjY0MTYwM15BMl5BanBnXkFtZTgwMDI5NzA2MzI@._V1_SX300.jpg",
+            "Ratings": [
+                {
+                    "Source": "Internet Movie Database",
+                    "Value": "7.1/10"
+                },
+                {
+                    "Source": "Rotten Tomatoes",
+                    "Value": "73%"
+                },
+                {
+                    "Source": "Metacritic",
+                    "Value": "74/100"
+                }
+            ],
+            "Metascore": "74",
+            "imdbRating": "7.1",
+            "imdbVotes": "384",
+            "imdbID": "tt5208216",
+            "Type": "movie",
+            "DVD": "N/A",
+            "BoxOffice": "N/A",
+            "Production": "Amazon Studios and Roadside Attractions",
+            "Website": "http://www.wonderstruckmovie.com/",
+            "Response": "True"
+        },
+        {
+            "Title": "American Made",
+            "Year": "2017",
+            "Rated": "R",
+            "Released": "29 Sep 2017",
+            "Runtime": "115 min",
+            "Genre": "Action, Biography, Comedy",
+            "Director": "Doug Liman",
+            "Writer": "Gary Spinelli",
+            "Actors": "Tom Cruise, Domhnall Gleeson, Sarah Wright, Jesse Plemons",
+            "Plot": "A pilot lands work for the CIA and as a drug runner in the south during the 1980s.",
+            "Language": "English, Spanish",
+            "Country": "USA",
+            "Awards": "N/A",
+            "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTUxNzUwMjk1Nl5BMl5BanBnXkFtZTgwNDkwODI1MjI@._V1_SX300.jpg",
+            "Ratings": [
+                {
+                    "Source": "Internet Movie Database",
+                    "Value": "7.4/10"
+                },
+                {
+                    "Source": "Rotten Tomatoes",
+                    "Value": "88%"
+                },
+                {
+                    "Source": "Metacritic",
+                    "Value": "63/100"
+                }
+            ],
+            "Metascore": "63",
+            "imdbRating": "7.4",
+            "imdbVotes": "9,844",
+            "imdbID": "tt3532216",
+            "Type": "movie",
+            "DVD": "N/A",
+            "BoxOffice": "N/A",
+            "Production": "Universal Pictures",
+            "Website": "http://www.americanmademovie.net/",
+            "Response": "True"
+        },
+        {
+            "Title": "Kingsman: The Golden Circle",
+            "Year": "2017",
+            "Rated": "R",
+            "Released": "22 Sep 2017",
+            "Runtime": "141 min",
+            "Genre": "Action, Adventure, Comedy",
+            "Director": "Matthew Vaughn",
+            "Writer": "Jane Goldman, Matthew Vaughn, Mark Millar (comic book \"The Secret Service\"), Dave Gibbons (comic book \"The Secret Service\")",
+            "Actors": "Taron Egerton, Edward Holcroft, Gordon Alexander, Mark Strong",
+            "Plot": "When their headquarters are destroyed and the world is held hostage, the Kingsman's journey leads them to the discovery of an allied spy organization in the US. These two elite secret organizations must band together to defeat a common enemy.",
+            "Language": "English",
+            "Country": "UK, USA",
+            "Awards": "N/A",
+            "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BNTBlOWZhZTctOTY0MC00Y2QyLTljMmYtZDkxZDFlMWU4Y2EyXkEyXkFqcGdeQXVyNDg2MjUxNjM@._V1_SX300.jpg",
+            "Ratings": [
+                {
+                    "Source": "Rotten Tomatoes",
+                    "Value": "57%"
+                }
+            ],
+            "Metascore": "N/A",
+            "imdbRating": "N/A",
+            "imdbVotes": "N/A",
+            "imdbID": "tt4649466",
+            "Type": "movie",
+            "DVD": "N/A",
+            "BoxOffice": "N/A",
+            "Production": "20th Century Fox",
+            "Website": "http://www.foxmovies.com/movies/kingsman-the-golden-circle",
+            "Response": "True"
+        },
+        {
+            "Title": "The LEGO Ninjago Movie",
+            "Year": "2017",
+            "Rated": "PG",
+            "Released": "22 Sep 2017",
+            "Runtime": "101 min",
+            "Genre": "Animation, Action, Adventure",
+            "Director": "Charlie Bean, Paul Fisher, Bob Logan",
+            "Writer": "Bob Logan (screenplay by), Paul Fisher (screenplay by), William Wheeler (screenplay by), Tom Wheeler (screenplay by), Jared Stern (screenplay by), John Whittington (screenplay by), Hilary Winston (story by), Bob Logan (story by), Paul Fisher (story by), William Wheeler (story by), Tom Wheeler (story by), Dan Hageman (story by), Kevin Hageman (story by)",
+            "Actors": "Jackie Chan, Dave Franco, Fred Armisen, Kumail Nanjiani",
+            "Plot": "Shunned by everyone for being the son of an evil warlord, a teenager seeks to defeat him with the help of his fellow ninjas.",
+            "Language": "English",
+            "Country": "Denmark, USA",
+            "Awards": "N/A",
+            "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTYxNjIxNzM5Nl5BMl5BanBnXkFtZTgwMzg5NzY2MjI@._V1_SX300.jpg",
+            "Ratings": [
+                {
+                    "Source": "Internet Movie Database",
+                    "Value": "6.3/10"
+                },
+                {
+                    "Source": "Metacritic",
+                    "Value": "55/100"
+                }
+            ],
+            "Metascore": "55",
+            "imdbRating": "6.3",
+            "imdbVotes": "1,793",
+            "imdbID": "tt3014284",
+            "Type": "movie",
+            "DVD": "N/A",
+            "BoxOffice": "N/A",
+            "Production": "Warner Bros. Pictures",
+            "Website": "https://www.lego.com/en-us/ninjago",
+            "Response": "True"
+        },
+        {
+            "Title": "American Assassin",
+            "Year": "2017",
+            "Rated": "R",
+            "Released": "15 Sep 2017",
+            "Runtime": "112 min",
+            "Genre": "Action, Thriller",
+            "Director": "Michael Cuesta",
+            "Writer": "Stephen Schiff (screenplay), Michael Finch (screenplay), Edward Zwick (screenplay), Marshall Herskovitz (screenplay), Vince Flynn (based on the novel by)",
+            "Actors": "Dylan O'Brien, Charlotte Vega, Christopher Bomford, Chris Webster",
+            "Plot": "A story centered on counterterrorism agent Mitch Rapp.",
+            "Language": "English, Italian, Arabic, Polish, Turkish, Persian",
+            "Country": "USA",
+            "Awards": "1 nomination.",
+            "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjM0MjY4MTk5NV5BMl5BanBnXkFtZTgwNDE2NTQyMzI@._V1_SX300.jpg",
+            "Ratings": [
+                {
+                    "Source": "Internet Movie Database",
+                    "Value": "6.7/10"
+                },
+                {
+                    "Source": "Rotten Tomatoes",
+                    "Value": "33%"
+                },
+                {
+                    "Source": "Metacritic",
+                    "Value": "45/100"
+                }
+            ],
+            "Metascore": "45",
+            "imdbRating": "6.7",
+            "imdbVotes": "6,137",
+            "imdbID": "tt1961175",
+            "Type": "movie",
+            "DVD": "N/A",
+            "BoxOffice": "$31,864,225",
+            "Production": "Lionsgate and CBS Films",
+            "Website": "http://www.cbsfilms.com/american-assassin/",
+            "Response": "True"
+        },
+        {
+            "Title": "Hate to See You Go",
+            "Year": "1988",
+            "Rated": "X",
+            "Released": "N/A",
+            "Runtime": "90 min",
+            "Genre": "Adult",
+            "Director": "John Leslie",
+            "Writer": "John Leslie (screenplay), John Leslie (story)",
+            "Actors": "Selena Steele, Nina Hartley, Jacqueline, Randy Spears",
+            "Plot": "N/A",
+            "Language": "English",
+            "Country": "USA",
+            "Awards": "N/A",
+            "Poster": "http://ia.media-imdb.com/images/M/MV5BMTk1MzY1MDI2M15BMl5BanBnXkFtZTcwMTc1MDAyMQ@@._V1_SX300.jpg",
+            "Ratings": [
+                {
+                    "Source": "Internet Movie Database",
+                    "Value": "6.7/10"
+                }
+            ],
+            "Metascore": "N/A",
+            "imdbRating": "6.7",
+            "imdbVotes": "23",
+            "imdbID": "tt0138482",
+            "Type": "movie",
+            "DVD": "N/A",
+            "BoxOffice": "N/A",
+            "Production": "N/A",
+            "Website": "N/A",
+            "Response": "True"
+        },
+        {
+            "Title": "Mother!",
+            "Year": "2017",
+            "Rated": "R",
+            "Released": "15 Sep 2017",
+            "Runtime": "121 min",
+            "Genre": "Drama, Horror, Mystery",
+            "Director": "Darren Aronofsky",
+            "Writer": "Darren Aronofsky",
+            "Actors": "Jennifer Lawrence, Javier Bardem, Ed Harris, Michelle Pfeiffer",
+            "Plot": "A couple's relationship is tested when uninvited guests arrive at their home, disrupting their tranquil existence.",
+            "Language": "English",
+            "Country": "USA",
+            "Awards": "2 nominations.",
+            "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMzc5ODExODE0MV5BMl5BanBnXkFtZTgwNDkzNDUxMzI@._V1_SX300.jpg",
+            "Ratings": [
+                {
+                    "Source": "Internet Movie Database",
+                    "Value": "6.9/10"
+                },
+                {
+                    "Source": "Rotten Tomatoes",
+                    "Value": "67%"
+                },
+                {
+                    "Source": "Metacritic",
+                    "Value": "74/100"
+                }
+            ],
+            "Metascore": "74",
+            "imdbRating": "6.9",
+            "imdbVotes": "19,983",
+            "imdbID": "tt5109784",
+            "Type": "movie",
+            "DVD": "N/A",
+            "BoxOffice": "$13,429,018",
+            "Production": "Paramount Pictures",
+            "Website": "http://www.mothermovie.com",
+            "Response": "True"
+        },
+        {
+            "Title": "Baby Driver",
+            "Year": "2017",
+            "Rated": "R",
+            "Released": "28 Jun 2017",
+            "Runtime": "112 min",
+            "Genre": "Action, Crime, Music",
+            "Director": "Edgar Wright",
+            "Writer": "Edgar Wright",
+            "Actors": "Ansel Elgort, Jon Bernthal, Jon Hamm, Eiza González",
+            "Plot": "After being coerced into working for a crime boss, a young getaway driver finds himself taking part in a heist doomed to fail.",
+            "Language": "English, American Sign Language",
+            "Country": "UK, USA",
+            "Awards": "5 wins & 2 nominations.",
+            "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjM3MjQ1MzkxNl5BMl5BanBnXkFtZTgwODk1ODgyMjI@._V1_SX300.jpg",
+            "Ratings": [
+                {
+                    "Source": "Internet Movie Database",
+                    "Value": "8.0/10"
+                },
+                {
+                    "Source": "Rotten Tomatoes",
+                    "Value": "93%"
+                },
+                {
+                    "Source": "Metacritic",
+                    "Value": "86/100"
+                }
+            ],
+            "Metascore": "86",
+            "imdbRating": "8.0",
+            "imdbVotes": "138,970",
+            "imdbID": "tt3890160",
+            "Type": "movie",
+            "DVD": "10 Oct 2017",
+            "BoxOffice": "$107,668,101",
+            "Production": "Sony Pictures",
+            "Website": "http://www.babydriver-movie.com/",
+            "Response": "True"
+        },
+        {
+            "Title": "Atomic Blonde",
+            "Year": "2017",
+            "Rated": "R",
+            "Released": "28 Jul 2017",
+            "Runtime": "115 min",
+            "Genre": "Action, Mystery, Thriller",
+            "Director": "David Leitch",
+            "Writer": "Kurt Johnstad (screenplay by), Antony Johnston (based on the Oni Press graphic novel series \"The Coldest City\" written by), Sam Hart (based on the Oni Press graphic novel series \"The Coldest City\" illustrated by)",
+            "Actors": "Charlize Theron, James McAvoy, Eddie Marsan, John Goodman",
+            "Plot": "An undercover MI6 agent is sent to Berlin during the Cold War to investigate the murder of a fellow agent and recover a missing list of double agents.",
+            "Language": "English, German, Russian, Swedish",
+            "Country": "Germany, Sweden, USA",
+            "Awards": "3 wins & 4 nominations.",
+            "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjM5NDYzMzg5N15BMl5BanBnXkFtZTgwOTM2NDU1MjI@._V1_SX300.jpg",
+            "Ratings": [
+                {
+                    "Source": "Internet Movie Database",
+                    "Value": "7.1/10"
+                },
+                {
+                    "Source": "Rotten Tomatoes",
+                    "Value": "75%"
+                },
+                {
+                    "Source": "Metacritic",
+                    "Value": "63/100"
+                }
+            ],
+            "Metascore": "63",
+            "imdbRating": "7.1",
+            "imdbVotes": "37,798",
+            "imdbID": "tt2406566",
+            "Type": "movie",
+            "DVD": "24 Oct 2017",
+            "BoxOffice": "$51,536,935",
+            "Production": "Focus Features",
+            "Website": "http://www.atomicblonde.com/",
+            "Response": "True"
         }
     ]
 }
