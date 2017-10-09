@@ -19,7 +19,7 @@ function getMovieInfo(movieTitle) {
                 }
             }
         })
-        xhr.open('GET', 'http://www.omdbapi.com/?t='+movieTitle+'&apikey=PlsBanMe', true)
+        xhr.open('GET', 'http://www.omdbapi.com/?t='+movieTitle+'&apikey=PlzBanMe', true)
         xhr.send(null)
     }).then(function(movie) {
        

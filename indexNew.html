@@ -22,12 +22,13 @@
     <script src="js/print.js"></script>
     <script src="js/printRumen.js"></script>
     <script src="js/printInTheaters.js"></script>
+    <script src="js/printLatestTrailers.js"></script>
+    <script src="js/latestPosters.js"></script>
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.amd.js"></script> -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
     <script src="js/userService.js"></script>
-    <script src="js/userController.js"></script>
 </head>
 
 <style>
@@ -113,8 +114,8 @@
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Movies<b class="caret"></b></a>
                                 <ul class="dropdown-menu">
-                                    <li><a id="inTheaters" href="#">In theaters</a></li>
-                                    <li><a href="#">Latest trailers</a></li>
+                                    <li><a id="inTheaters" href="#inTheatersId">In theaters</a></li>
+                                    <li><a id="latestTrailers" href="#trailers">Latest trailers</a></li>
                                     <li><a href="#">Coming soon</a></li>
                                     <li><a href="#">Release calender</a></li>
                                     <li class="divider"></li>
@@ -126,12 +127,12 @@
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Chart & Trends<b class="caret"></b></a>
                                 <ul class="dropdown-menu">
-                                    <li><a id="oscarWinners" href="#">Oscar winers</a></li>
+                                    <li><a id="oscarWinners" href="#printHereIdiot">Oscar winers</a></li>
                                     <li><a href="#">Most popular movies</a></li>
                                     <li><a href="#">Most popular Tv shows</a></li>
                                     <li class="divider"></li>
                                     <li><a href="#">Born today</a></li>
-                                    <li><a href="#">Latest Posters</a></li>
+                                    <li><a id="latestPosters" href="#lPosters">Latest Posters</a></li>
                                 </ul>
                             </li>
 
@@ -280,9 +281,23 @@
                         <div class="col-sm-4 aside">
                             <h3>Recently viewed</h3>
                         </div>
-                        <div class="col-sm-12 inTheaters">
+                        <div id="lPosters" class="col-sm-12 latestPosters">
+                            <h3 style="text-align: center; padding: 20px;">Latest Posters</h3>
+                        </div>
+                        <div id="inTheatersId" class="col-sm-12 inTheaters">
                             <h3>In Theaters</h3>
                         </div>
+                        <div id="cSoon" class="col-sm-12 comingSoon">
+                            <h3>Coming Soon</h3>
+                        </div>
+                        <div id="trailers" class="col-sm-12 latestTrailers">
+                            <h3>Latest Trailers</h3>
+                        </div>
+
+                        <!-- aaaaaaaaaaaaaaaaaaaaaaaa -->
+
+
+                        <!-- /aaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
                     </div>
                 </div>
 
