@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             if (povtarqSe == false) {
                 var spanID = "btnRecentlyViewed" + index
-                $(".aside").append('<div class="col-sm-12" style="height: 65px;"><div><img src="'+arrayMovies[index].Poster+'"></div><span id="'+spanID+'"><a>'+arrayMovies[index].Title+'</a></span></div></div>')
+                $(".aside").append('<div class="col-sm-12 asideDivs" style="height: 65px;"><div><img src="'+arrayMovies[index].Poster+'"></div><span id="'+spanID+'"><a>'+arrayMovies[index].Title+'</a></span></div></div>')
                 recentlyWatched.push(arrayMovies[index].Title)
                 searchAgainEvent(spanID)  
             }
@@ -66,6 +66,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         }).then(function () {
             $("#buttonForWatch").append('<button id="addToWatchlist" style="position:fixed;bottom:0;background-color: rgb(52, 52, 52);"class="btn btn-primary btn-block">Add to Watchlist</button>')
+            // $("#buttonForWatch").append('<button id="addToWatchlist" style="position:fixed;bottom:0;background-color: rgb(52, 52, 52);"class="btn btn-primary btn-block"></button>')
             $("#addToWatchlist").on("click", function () {
                 var loggedUser = JSON.parse(sessionStorage.getItem("Loged user"))
                 povtarqSe = false
@@ -114,24 +115,16 @@ document.addEventListener('DOMContentLoaded', function () {
     /////////print movies/////////////////////////////////
     /////////userNamelogin////////////////////////////////
     document.getElementById("signIN").addEventListener("click", function () {
-        
         event.preventDefault();
         var userName = document.getElementById("inputLoginName").value
         var userPassword = document.getElementById("inputLoginPassword").value
 
         if (userList.login(userName, userPassword)) {
             var watchlist = document.getElementById("watchlist").style.display = "block"
-            $("#signedINusername").text(userName) 
-            alert("Loged in")
+            // alert("BRAVO VLEZNA")
             var toHide = document.getElementById("toHide").style.display = "none"
             var logout = document.getElementById("logout").style.display = "block"
-        }else{
-
-            document.getElementById("inputLoginName").value=""
-            document.getElementById("inputLoginPassword").value=""
-            alert("oburka si parolata pich ili imeto , da ne sum vrachka murzi me da pisha proverki v 3 chasa prez noshta")
         }
-        
     })
     /////////userNamelogin////////////////////////////////
     /////////userNameRegistration////////////////////////////////  
@@ -142,24 +135,13 @@ document.addEventListener('DOMContentLoaded', function () {
         var userEmailRegister = document.getElementById("inputRegisterEmail").value
 
         if (userList.addUser(userNameRegister, userPasswordRegister, userEmailRegister)) {
-            alert("bravo regna se ")
-            document.getElementById("inputLoginName").value=userNameRegister
-            document.getElementById("inputLoginPassword").value=userPasswordRegister
             userList.addUser(userNameRegister, userPasswordRegister, userEmailRegister)
-                        
-        }else{
-            document.getElementById("inputRegisterName").value=""
-            document.getElementById("inputRegisterEmail").value=""
-            document.getElementById("inputRegisterPassword").value=""
-            alert("Ima drug pichata s tova ime i vse oshte ne sum pisal kachestveni regexi,nadqvam se da imash chustvo za humor")
-
+            // alert("BRAVO VLEZNA")            
         }
-
     })
     /////////userNameRegistration////////////////////////////////  
     //////// logout//////////////////////////////////////////////
     document.getElementById("logout").addEventListener("click", function () {
-        sessionStorage.clear()
         location.reload();
     })
     // $('#something').click(function() {
