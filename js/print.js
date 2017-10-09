@@ -1,8 +1,19 @@
 document.addEventListener('DOMContentLoaded', function () {
     /////////print movies////////////////////////////////
-
     
-    var loggedUser = JSON.parse(sessionStorage.getItem("Loged user"))
+    function searchAgainEvent(id) {
+        document.getElementById(id).addEventListener("click", function (e) {
+            arrayMovies.forEach(function (element) {
+                if (e.target.textContent == element.Title) {
+                    document.querySelector("#srch-term").value = e.target.textContent
+                    console.log(e.target.textContent)
+                    $("#search-enter").trigger("click")
+                }
+            })
+        })
+    }
+
+    var liIndex = 0
     var recentlyWatched = [];
     var index = 0
     var templateMovie = document.getElementById('movieDIv').innerHTML;
@@ -43,79 +54,11 @@ document.addEventListener('DOMContentLoaded', function () {
             })
 
             if (povtarqSe == false) {
-                var spanID = "btnRecentlyViewed"+index
-                // var buttonID = "btnAddToWatchlist"+index
-                var div = document.createElement("div")
-                div.className = "col-sm-12"
-                div.style.height = "65px"
-                var divImg = document.createElement("div")
-                var img = document.createElement("img")
-                img.src = arrayMovies[index].Poster
-                var span = document.createElement("span")
-                span.id = spanID
-                var a = document.createElement("a")
-                // var button = document.createElement("button")
-                // button.innerText = "Add To Watchlist"
-                // button.id = btnAddToWatchlist
-                a.innerText = arrayMovies[index].Title
-                span.appendChild(a)
-                divImg.appendChild(img)
-                div.appendChild(divImg)
-                div.appendChild(span)
-                // div.appendChild(button)
-                document.querySelector(".aside").appendChild(div)
-                // $(".aside").append('<div class="col-sm-12" style="height: 65px;"><div><img src="'+arrayMovies[index].Poster+'"></div><span id="'+spanID+'"><a>"'+arrayMovies[index].Title+'"</a></span></div></div>")
-                
+                var spanID = "btnRecentlyViewed" + index
+                $(".aside").append('<div class="col-sm-12" style="height: 65px;"><div><img src="'+arrayMovies[index].Poster+'"></div><span id="'+spanID+'"><a>'+arrayMovies[index].Title+'</a></span></div></div>')
                 recentlyWatched.push(arrayMovies[index].Title)
-
-
-                // document.getElementById(btnAddToWatchlist).addEventListener("click",function() {
-                //     alert("WOHOOOO")
-                // })
-
-                document.getElementById(spanID).addEventListener("click",function(e) {
-                        arrayMovies.forEach(function(element) {
-                            if (e.target.textContent == element.Title) {
-                                document.querySelector("#srch-term").value= e.target.textContent
-                                $("#search-enter").trigger("click")
-                            }
-                        })
-                    })
+                searchAgainEvent(spanID)  
             }
-            // document.getElementById("#btnRecentlyViewed"+index).addEventListener("click",function(e) {
-            //     arrayMovies.forEach(function(element) {
-            //         if (e.value == element.Title) {
-            //             var newTemplate = {
-            //                 news: [
-            //                     {
-            //                         image: arrayMovies[element].Poster,
-            //                         title: arrayMovies[element].Title,
-            //                         year: arrayMovies[element].Year,
-            //                         rated: arrayMovies[element].Rated,
-            //                         released: arrayMovies[element].Released,
-            //                         runtime: arrayMovies[element].Runtime,
-            //                         genre: arrayMovies[element].Genre,
-            //                         director: arrayMovies[element].Director,
-            //                         writer: arrayMovies[element].Writer,
-            //                         actors: arrayMovies[element].Actors,
-            //                         plot: arrayMovies[element].Plot,
-            //                         language: arrayMovies[element].Language,
-            //                         country: arrayMovies[element].Country,
-            //                         awards: arrayMovies[element].Awards,
-            //                         text: arrayMovies[element].Title,
-            //                         boxoffice: arrayMovies[element].BoxOffice,
-            //                     } 
-            //                 ]
-            //             }
-            //             var template = Handlebars.compile(templateMovie);
-            //             var readyHTML = template(newTemplate);
-            //             document.getElementById('printHere').innerHTML = readyHTML;
-            //         }
-            //     })
-            // })
-
-            
-
 
             index++
             var template = Handlebars.compile(templateMovie);
@@ -124,32 +67,50 @@ document.addEventListener('DOMContentLoaded', function () {
 
         }).then(function () {
             $("#buttonForWatch").append('<button id="addToWatchlist" style="position:fixed;bottom:0;background-color: rgb(52, 52, 52);"class="btn btn-primary btn-block">Add to Watchlist</button>')
-            $("#addToWatchlist").on("click",function () {
-                // povtarqSe = false
-                if (loggedUser != -1)
-                
-                // loggedUser.arrayWatchList.forEach(function (element) {
-                //     arrayMovies.forEach(function (element2){
-                //         if (element.Title == element2.Title) {
-                //             povtarqSe = true
-                //         }
-                //     })
-                    if (loggedUser.arrayWatchList.forEach(function (element) {
-                        arrayMovies.some(movie => movie.Title === element.Title)})) {
-                        loggedUser.arrayWatchList.push(arrayMovies[arrayMovies.length-1])
-                        console.log(loggedUser.arrayWatchList)
-                        console.log(loggedUser)
-                        console.log(arrayMovies)
+            $("#addToWatchlist").on("click", function () {
+                var loggedUser = JSON.parse(sessionStorage.getItem("Loged user"))
+                povtarqSe = false
+                if (loggedUser != -1) {
+
+                if (loggedUser.arrayWatchList.length == 0) {
+                    printWatchlist(arrayMovies[arrayMovies.length - 1])
+                } else {
+
+                    loggedUser.arrayWatchList.forEach(function (element) {
+                        if (element.Title == arrayMovies[arrayMovies.length - 1].Title) {
+                            povtarqSe = true
                         }
-                // })  
-                // if (povtarqSe==false) {
-                    
-                // }
-                console.log(arrayMovies)
-           })
+                    })
+
+                    if (povtarqSe == false) {
+                        printWatchlist(arrayMovies[arrayMovies.length - 1])
+                        console.log(loggedUser)
+                    }
+                }
+                sessionStorage.setItem("Loged user", JSON.stringify(loggedUser))
+                var local = JSON.parse(localStorage.getItem("users"))
+                local.forEach(function (element) {
+                    if (element.username == loggedUser.username) {
+                        element.arrayWatchList = loggedUser.arrayWatchList.slice(0)
+                    }
+                })
+                console.log(local)
+                localStorage.setItem("users", JSON.stringify(local))
+
+
+                function printWatchlist(movie) {
+                    var liID = "btnWatchlistLi" + liIndex
+                    $("#watchlistDropdown").append("<li id='"+liID+"'><a href='#'>" + movie.Title + "</a></li>")
+                    searchAgainEvent(liID)
+                    loggedUser.arrayWatchList.push(movie)
+                }
+
+            }
+
+            })
         })
     })
-    
+
 
 
     /////////print movies/////////////////////////////////
