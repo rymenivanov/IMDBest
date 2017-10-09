@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', function () {
             arrayMovies.forEach(function (element) {
                 if (e.target.textContent == element.Title) {
                     document.querySelector("#srch-term").value = e.target.textContent
-                    console.log(e.target.textContent)
                     $("#search-enter").trigger("click")
                 }
             })
@@ -84,7 +83,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
                     if (povtarqSe == false) {
                         printWatchlist(arrayMovies[arrayMovies.length - 1])
-                        console.log(loggedUser)
                     }
                 }
                 sessionStorage.setItem("Loged user", JSON.stringify(loggedUser))
@@ -94,7 +92,6 @@ document.addEventListener('DOMContentLoaded', function () {
                         element.arrayWatchList = loggedUser.arrayWatchList.slice(0)
                     }
                 })
-                console.log(local)
                 localStorage.setItem("users", JSON.stringify(local))
 
 
@@ -102,6 +99,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     var liID = "btnWatchlistLi" + liIndex
                     $("#watchlistDropdown").append("<li id='"+liID+"'><a href='#'>" + movie.Title + "</a></li>")
                     searchAgainEvent(liID)
+                    liIndex++
                     loggedUser.arrayWatchList.push(movie)
                 }
 

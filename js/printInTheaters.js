@@ -7,6 +7,7 @@ $(function(){
                 var theatersID = "btnInTheaters" + theatersIndex
                 // $('.inTheaters').append('<div class="tMovies"><img src="'+el.Poster+'"/><p>'+el.Title+'</p></div>');
                 $('.inTheaters').append('<div class="tMovies" id=""><img src="'+el.Poster+'"/><span id='+theatersID+'><a>'+el.Title+'</a></div>');
+                theatersIndex++
             }, this);
         }
     });
