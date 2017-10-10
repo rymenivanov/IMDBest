@@ -11,16 +11,10 @@ $(function () {
             }, this);
         }
         
-       
-                
-            
     });
-
     $('#oscarWinners').on('click', function () {
         $('#printHereIdiot').toggle();
     });
-
-
     $('.videoStart').on('click', function () {
         $('.videoDiv').css('visiblity', 'hidden');
     });

@@ -230,11 +230,16 @@ textarea#newoptions {
     display: none;
     width: 70%;
 }
-
+#trMovies{
+    display: none;
+    width: 70%;
+}
 #printHereIdiot img{
     height: 400px;
 }
-
+#trMovies img{
+    height: 400px;
+}
 .aside img{
     height: 65px;
     display: block;
@@ -274,6 +279,10 @@ textarea#newoptions {
 }
 
 .comingSoon{
+    display: none;
+}
+
+.topRatedMovies{
     display: none;
 }
 
@@ -340,6 +349,7 @@ iframe{
     max-width: 100%;
     display: block;
 }
+
 .tMovies a {
     font-size: 1.2em
 }
