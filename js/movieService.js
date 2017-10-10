@@ -1,5 +1,7 @@
 var arrayMovies = []
+// var searching = false;
 function getMovieInfo(movieTitle) {
+    // if (!searching) {
         
     searching=true;
     return new Promise(function (resolve, reject) {
@@ -22,7 +24,22 @@ function getMovieInfo(movieTitle) {
     }).then(function(movie) {
        
         arrayMovies.push(movie)
+        // searching=true
       }, function(err) {
         console.log(err)
       })
     }
+// }
+// getMovieInfo("the matrix")
+
+
+// $('#tozibuton').on('click', function () {
+//     $.get('http://www.theimdbapi.org/api/find/movie?title=jaws&year=').then(function (movie) {
+//         console.log((movie[0].metadata+ " " + movie[0].title));
+//     }).catch(function (err) {
+//         console.log(err);
+//         $('#result').text(err);
+//     });
+// });
+
+// console.log("vliza we")

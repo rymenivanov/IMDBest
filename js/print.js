@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
     /////////print movies////////////////////////////////
-
     function searchAgainEvent(id) {
         document.getElementById(id).addEventListener("click", function (e) {
             arrayMovies.forEach(function (element) {
@@ -90,10 +89,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 })
             }
             $("#addToWatchlist").on("click", function () {
-                
-                    
-                
-                    var loggedUser = JSON.parse(sessionStorage.getItem("Loged user"))
+
+
+
+                var loggedUser = JSON.parse(sessionStorage.getItem("Loged user"))
                 povtarqSe = false
                 if (loggedUser != null) {
 
@@ -115,7 +114,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 } else {
                     alert("You need to be logged to add movies your whatchlist, maaaaaafaka ")
                 }
-            
+
 
             })
             document.querySelector("#watchlist").addEventListener("click", function () {
@@ -136,7 +135,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     }
                 })
             })
-            
+
         })
     })
 
@@ -165,7 +164,10 @@ document.addEventListener('DOMContentLoaded', function () {
     })
     /////////userNamelogin////////////////////////////////
     /////////userNameRegistration////////////////////////////////  
-    document.addEventListener('DOMContentLoaded', function () {
+    document.getElementById("joinBtn").addEventListener("click", function () {
+        event.preventDefault();
+        var userNameRegister = document.getElementById("inputRegisterName").value
+        var userPasswordRegister = document.getElementById("inputRegisterPassword").value
         var userEmailRegister = document.getElementById("inputRegisterEmail").value
 
         if (userList.addUser(userNameRegister, userPasswordRegister, userEmailRegister)) {
