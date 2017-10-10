@@ -552,7 +552,7 @@
   
     $.fn.waterwheelCarousel.defaults = {
       // number tweeks to change apperance
-      startingItem:               1,   // item to place in the center of the carousel. Set to 0 for auto
+      startingItem:               0,   // item to place in the center of the carousel. Set to 0 for auto
       separation:                 175, // distance between items in carousel
       separationMultiplier:       0.6, // multipled by separation distance to increase/decrease distance for each additional item
       horizonOffset:              0,   // offset each item from the "horizon" by this amount (causes arching)

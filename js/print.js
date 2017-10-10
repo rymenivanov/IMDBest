@@ -27,11 +27,8 @@ document.addEventListener('DOMContentLoaded', function () {
     var recentlyWatched = [];
     var index = 0
     var templateMovie = document.getElementById('movieDIv').innerHTML;
-    var searchEnter = document.getElementById("search-enter").addEventListener("click", function (event) {
+    document.getElementById("search-enter").addEventListener("click", function (event) {
         event.preventDefault()
-        // document.getElementById('printHere').innerHTML= ""
-
-        // movie.push(getMovieInfo(document.querySelector("#srch-term").value))
         getMovieInfo(document.querySelector("#srch-term").value).then(function () {
             document.querySelector("#srch-term").value = ""
             var allMovies = {
@@ -93,10 +90,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 })
             }
             $("#addToWatchlist").on("click", function () {
-                if (!loggedUser) {
-                    alert("You need to be logged to add movies your whatchlist, maaaaaafaka ")
-                }else
-                var loggedUser = JSON.parse(sessionStorage.getItem("Loged user"))
+                
+                    
+                
+                    var loggedUser = JSON.parse(sessionStorage.getItem("Loged user"))
                 povtarqSe = false
                 if (loggedUser != null) {
 
@@ -114,18 +111,11 @@ document.addEventListener('DOMContentLoaded', function () {
                             loggedUser.arrayWatchList.push(arrayMovies[arrayMovies.length - 1])
                         }
                     }
-
                     updateStorages(loggedUser)
-
-
-                    // function printWatchlist(movie) {
-                    //     var liID = "btnWatchlistLi" + liIndex
-                    //     $("#watchlistDropdown").append("<li id='"+liID+"'><a href='#'>" + movie.Title + "</a></li>")
-                    //     searchAgainEvent(liID)
-                    //     liIndex++
-                    // }
-
+                } else {
+                    alert("You need to be logged to add movies your whatchlist, maaaaaafaka ")
                 }
+            
 
             })
             document.querySelector("#watchlist").addEventListener("click", function () {
@@ -137,75 +127,68 @@ document.addEventListener('DOMContentLoaded', function () {
                         element.arrayWatchList.forEach(function (el) {
                             var liID = "btnWatchlistLi" + liIndex
                             $("#watchlistDropdown").append("<li id='" + liID + "'><a href='#'>" + el.Title + "</a></li>")
-                            searchAgainEvent(liID)
+                            document.getElementById(liID).addEventListener("click", function (e) {
+                                document.querySelector("#srch-term").value = e.target.textContent
+                                $("#search-enter").trigger("click")
+                            })
                             liIndex++
                         })
                     }
                 })
             })
-
-
-
+            
         })
     })
-
-
 
     /////////print movies/////////////////////////////////
     /////////userNamelogin////////////////////////////////
     document.getElementById("signIN").addEventListener("click", function () {
-                
-                 event.preventDefault();
-                 var userName = document.getElementById("inputLoginName").value
-                 var userPassword = document.getElementById("inputLoginPassword").value
-         
-                 if (userList.login(userName, userPassword)) {
-                     var watchlist = document.getElementById("watchlist").style.display = "block"
-                    // alert("BRAVO VLEZNA")
-                    $("#signedINusername").text(userName) 
-                    alert("Loged in")
-                     var toHide = document.getElementById("toHide").style.display = "none"
-                     var logout = document.getElementById("logout").style.display = "block"
-                }
-                else{
-        
-                    document.getElementById("inputLoginName").value=""
-                    document.getElementById("inputLoginPassword").value=""
-                    alert("oburka si parolata pich ili imeto , da ne sum vrachka murzi me da pisha proverki v 2 chasa prez noshta")
-                 }
-                
-             })
-             /////////userNamelogin////////////////////////////////
-             /////////userNameRegistration////////////////////////////////  
-         document.addEventListener('DOMContentLoaded', function () {
-                 var userEmailRegister = document.getElementById("inputRegisterEmail").value
-         
-                 if (userList.addUser(userNameRegister, userPasswordRegister, userEmailRegister)) {
-                    alert("bravo regna se ")
-                    document.getElementById("inputLoginName").value=userNameRegister
-                    document.getElementById("inputLoginPassword").value=userPasswordRegister
-                     userList.addUser(userNameRegister, userPasswordRegister, userEmailRegister)
-                    // alert("BRAVO VLEZNA")            
-                                
-                }else{
-                    document.getElementById("inputRegisterName").value=""
-                    document.getElementById("inputRegisterEmail").value=""
-                    document.getElementById("inputRegisterPassword").value=""
-                    alert("Ima drug pichata s tova ime i vse oshte ne sum pisal kachestveni regexi,nadqvam se da imash chustvo za humor")
-        
-                 }
-        
-             })
-             /////////userNameRegistration//////////////////////////////// 
+
+        event.preventDefault();
+        var userName = document.getElementById("inputLoginName").value
+        var userPassword = document.getElementById("inputLoginPassword").value
+
+        if (userList.login(userName, userPassword)) {
+            var watchlist = document.getElementById("watchlist").style.display = "block"
+            $("#signedINusername").text(userName)
+            alert("Loged in")
+            var toHide = document.getElementById("toHide").style.display = "none"
+            var logout = document.getElementById("logout").style.display = "block"
+        }
+        else {
+
+            document.getElementById("inputLoginName").value = ""
+            document.getElementById("inputLoginPassword").value = ""
+            alert("oburka si parolata pich ili imeto , da ne sum vrachka murzi me da pisha proverki v 2 chasa prez noshta")
+        }
+
+    })
+    /////////userNamelogin////////////////////////////////
+    /////////userNameRegistration////////////////////////////////  
+    document.addEventListener('DOMContentLoaded', function () {
+        var userEmailRegister = document.getElementById("inputRegisterEmail").value
+
+        if (userList.addUser(userNameRegister, userPasswordRegister, userEmailRegister)) {
+            alert("bravo regna se ")
+            document.getElementById("inputLoginName").value = userNameRegister
+            document.getElementById("inputLoginPassword").value = userPasswordRegister
+            userList.addUser(userNameRegister, userPasswordRegister, userEmailRegister)
+            // alert("BRAVO VLEZNA")            
+
+        } else {
+            document.getElementById("inputRegisterName").value = ""
+            document.getElementById("inputRegisterEmail").value = ""
+            document.getElementById("inputRegisterPassword").value = ""
+            alert("Ima drug pichata s tova ime i vse oshte ne sum pisal kachestveni regexi,nadqvam se da imash chustvo za humor")
+
+        }
+    })
+    /////////userNameRegistration//////////////////////////////// 
     /////////userNameRegistration////////////////////////////////  
     //////// logout//////////////////////////////////////////////
     document.getElementById("logout").addEventListener("click", function () {
-        sessionStorage.clear()        
+        sessionStorage.clear()
         location.reload();
     })
-    // $('#something').click(function() {
-    //     location.reload();
-    // });
     /////////////logout//////////////
-
 });
